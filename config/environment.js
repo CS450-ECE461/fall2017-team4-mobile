@@ -26,7 +26,17 @@ module.exports = function(environment) {
     cordova: {
       rebuildOnChange: false,
       emulate: false
-    }
+    },
+
+    gatekeeper: {
+     baseUrl: 'https://localhost:4200/gatekeeper',
+
+     tokenOptions: {
+       client_id: '59ee923e1fd71c2ae68ade62',
+       client_secret: '1234567890'
+     }
+   }
+
   };
 
   if (environment === 'development') {
