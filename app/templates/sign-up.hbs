@@ -1,48 +1,70 @@
-
 <div class="container">
 <div align="center">
 
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+  Sign Up With Google
+</button>
+
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+  Sign Up With Facebook
+</button>
+
 {{mdl-textfield label="Username"
-                   required=false
+                   required=true
                    fullWidth=false
                    customError=customError
-                   placeholder=""
+                   placeholder="Username"
                    errorMessage=errorMessage
 floatingLabel=true}}
 
 <br/>
 
 {{mdl-textfield label="Email"
-                   required=false
+                   required=true
                    fullWidth=false
                    customError=customError
-                   placeholder=""
+                   placeholder="Email"
                    errorMessage=errorMessage
 floatingLabel=true}}
+
+<br/>
+
+{{mdl-textfield label="Phone"
+                  required=false
+                  fullWidth=false
+                  customError=customError
+                  placeholder="Phone"
+                  errorMessage=errorMessage
+floatingLabel=true}}
+
+<br/>
+
+<div id="state-entry">
+{{mdl-textfield label="State"
+                  required=false
+                  fullWidth=false
+                  customError=customError
+                  placeholder="State"
+                  errorMessage=errorMessage
+floatingLabel=true}}
+
+{{#mdl-button raised="true" colored="true"}}Button{{/mdl-button}}
+
+</div>
 
 <br/>
 
 {{mdl-textfield label="Password"
-                   required=false
+                   required=true
                    fullWidth=false
                    customError=customError
-                   placeholder=""
+                   placeholder="Password"
                    errorMessage=errorMessage
 floatingLabel=true}}
 
 <br/>
 
-{{mdl-textfield label="Confirm Password"
-                   required=false
-                   customError=customError
-                   placeholder=""
-                   errorMessage=errorMessage
-                   fullWidth=false
-floatingLabel=true}}
-
-<br/>
-
-<span class="button-container">{{#mdl-button type="submit" colored=true mini=true}}Register{{mdl-icon icon="send"}}{{/mdl-button}}</span>
+<span class="button-container">{{#mdl-button type="submit" colored=true mini=true createAccount=(action "createAccount")}}Sign Up Now{{/mdl-button}}</span>
 
 </div>
 </div>
