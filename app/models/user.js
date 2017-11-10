@@ -4,5 +4,7 @@ export default DS.Model.extend({
   name: DS.attr(),
   email: DS.attr(),
   password: DS.attr(),
-  phoneNumber: DS.attr()
+  city: DS.attr(),
+  state: DS.attr(),
+  radius: DS.attr()
 });
