@@ -2,7 +2,10 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   skills: DS.hasMany(),
-  about: DS.attr('string')
-  education: DS.attr('string'),
+  occupations: DS.hasMany(),
+  education: DS.hasMany(),
+  experience: DS.hasMany(),
+  about: DS.attr('string'),
+  headline: DS.attr(),
   birthdate: DS.attr('string')
 });
