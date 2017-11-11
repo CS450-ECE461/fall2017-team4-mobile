@@ -1,4 +1,5 @@
 import Controller from '@ember/controller';
+import Ember from 'ember';
 
 export default Controller.extend({
   actions: {
@@ -8,11 +9,12 @@ export default Controller.extend({
       let adapterOptions = {signIn: true};
 
       account.save ({adapterOptions}).then (account => {
-        // You can transition to a protected application route
+        Ember.Logger.log(account)
       }).catch (reason => {
-        // Display error message to user
+        Ember.Logger.log(reason)
       });
     },
+
     signUpClick(){
 
     }
