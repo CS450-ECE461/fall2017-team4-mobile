@@ -1,0 +1,14 @@
+{{#each model as |user|}}
+  <article class="profile">
+    <h3>{{user.name}}</h3>
+    <div class="detail email">
+      <span>Email:</span> {{user.email}}
+    </div>
+    <div class="detail city">
+      <span>Location:</span> {{user.city}}, {{user.state}}
+    </div>
+    <div class="detail location">
+      <span>Range:</span> {{user.range}} miles
+    </div>
+  </article>
+{{/each}}
