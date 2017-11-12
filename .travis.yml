@@ -19,9 +19,9 @@ matrix:
       deploy:
         - skip_cleanup: true
           provider: s3
-          access_key_id: AKIAI4WXR4PRA6AJKFYA
+          access_key_id: AKIAJMH545S5JKUIND7A
           secret_access_key:
-            secure: qVXDZge9N2n3n6A9vO+3w1yLotKc7VLqtgNu/aCeSrFThMdEwnJ3Dl7RLcIV0/2R6nWuIg7AYq5CMmWjfV48kAxVtjQpB3J2B4qVgiyvbJZv1B9vIz5Xs+rF/C9SFJGu7UKR2+q7B9Sdo7b9MwueUgvQXGSMGqBuyC6JuHeTIXUB1SpH64hdQglXRTWXv2kX2cwNfKEHWLna8ffK5SdcH6aG0fx+pRJs/V9rVOax6GlVO5sqdmHqpedBAx+MYVEY+rXRyUa3UMujLAAug7V1SmNUOP4HTwqQ48hPnOhQ8o4+hSHCzFMS04Wp06yac+QP73dsbG7yyg5C7/FhXMbiGQRSPwHd5Tf6lFdw3ifipBRp3MUlnUKbFu7udKNptK2O+k9SHShDgZ/uXfm1iQSb7RJxLP6bjpRtlsIBM5hDNrLiJcNRT0OI14VYLVD6HkwIZwTuDeXFi6qAhEuEEh/7Pm8yuR+QYOJ1oJOML8nqjmk+avD/1dFUACjhH4cenkaBRp8UlNCAc6yDAwoPkbTzXssOPvJiSAni+I7FJD6ELnIoF7rTvGf0vHrHExhBFWSF3PTLbfbzxjBWtbdDHj/kUERL1A/O9JMMakKy8WgatOp+xVQ48lYCbi/Zn8fgvQMjdiucsWgWQtHtn36NkfE0jdkp/Gr2cz+BFG28c/eOB8o=
+            secure: Pd2BuDHdn1jxsfOdcfAl/ZIcCJRFT0cULG7eCaLdh0/mkaG9nbfc6+Nm3vk0S0evwHp2yPljzndia3MgepkeXfiYPjTvPvfDT6oKp2UZAUCS9SYWWxEkHyockRigDPEIJqGTg3uTBLQaxHaRSCz2SUL+QYInjo517yJrlVC5IjqhH95Zw7sgeYP2IYbKab5rY4BA2KfxDuAXDFMJPrXejT4rElnRipht1pCree/aA9cDxi48cN2VhZLicb/kI75PSNg3T7PTXfhOxhNpyCxN+wgJ0e6zFTZSW7XKYGVYeJvG1g8YSh/QCNrIx1tPcnyW59yMXNCGhqGoYRJu4Voa5ftbzI9TxlpaoXnyQ1MoKkPN3LV+DMtpXmTTraqw6bTlgrzKDTccQLwDE3g8GYNLNHpWUsSPvph5skaDOcowFrvv91OS5pvN7V0Yk0kDqMACB69gHC/b05Tb2dJlMRVmKfJUJ9HuaIdhA/a5oMzipsUnHkGYlIczHlZeqEimiLE0DGR4I6sjo+nnAVKAaGxfUJ+d/zfCjie7p8cezCeQksnVHMiaUakwIEe/b9G9Hw29xil7FU6ZLKaMCv31M2Bjdu8dumaAbeRw4gdnUhAUO1rqcPFMyJ4ldTMHJY/pJj7jAUF24vIehH/m98POBftYXhK5g2XhAELdqCBeJJjAog0=
           bucket: waldo-jobs-dev
           local-dir: cordova/platforms/ios/build
           upload-dir: ios-build
@@ -33,9 +33,9 @@ matrix:
 
         - skip_cleanup: true
           provider: s3
-          access_key_id: AKIAI4WXR4PRA6AJKFYA
+          access_key_id: AKIAJMH545S5JKUIND7A
           secret_access_key:
-            secure: qVXDZge9N2n3n6A9vO+3w1yLotKc7VLqtgNu/aCeSrFThMdEwnJ3Dl7RLcIV0/2R6nWuIg7AYq5CMmWjfV48kAxVtjQpB3J2B4qVgiyvbJZv1B9vIz5Xs+rF/C9SFJGu7UKR2+q7B9Sdo7b9MwueUgvQXGSMGqBuyC6JuHeTIXUB1SpH64hdQglXRTWXv2kX2cwNfKEHWLna8ffK5SdcH6aG0fx+pRJs/V9rVOax6GlVO5sqdmHqpedBAx+MYVEY+rXRyUa3UMujLAAug7V1SmNUOP4HTwqQ48hPnOhQ8o4+hSHCzFMS04Wp06yac+QP73dsbG7yyg5C7/FhXMbiGQRSPwHd5Tf6lFdw3ifipBRp3MUlnUKbFu7udKNptK2O+k9SHShDgZ/uXfm1iQSb7RJxLP6bjpRtlsIBM5hDNrLiJcNRT0OI14VYLVD6HkwIZwTuDeXFi6qAhEuEEh/7Pm8yuR+QYOJ1oJOML8nqjmk+avD/1dFUACjhH4cenkaBRp8UlNCAc6yDAwoPkbTzXssOPvJiSAni+I7FJD6ELnIoF7rTvGf0vHrHExhBFWSF3PTLbfbzxjBWtbdDHj/kUERL1A/O9JMMakKy8WgatOp+xVQ48lYCbi/Zn8fgvQMjdiucsWgWQtHtn36NkfE0jdkp/Gr2cz+BFG28c/eOB8o=
+            secure: Pd2BuDHdn1jxsfOdcfAl/ZIcCJRFT0cULG7eCaLdh0/mkaG9nbfc6+Nm3vk0S0evwHp2yPljzndia3MgepkeXfiYPjTvPvfDT6oKp2UZAUCS9SYWWxEkHyockRigDPEIJqGTg3uTBLQaxHaRSCz2SUL+QYInjo517yJrlVC5IjqhH95Zw7sgeYP2IYbKab5rY4BA2KfxDuAXDFMJPrXejT4rElnRipht1pCree/aA9cDxi48cN2VhZLicb/kI75PSNg3T7PTXfhOxhNpyCxN+wgJ0e6zFTZSW7XKYGVYeJvG1g8YSh/QCNrIx1tPcnyW59yMXNCGhqGoYRJu4Voa5ftbzI9TxlpaoXnyQ1MoKkPN3LV+DMtpXmTTraqw6bTlgrzKDTccQLwDE3g8GYNLNHpWUsSPvph5skaDOcowFrvv91OS5pvN7V0Yk0kDqMACB69gHC/b05Tb2dJlMRVmKfJUJ9HuaIdhA/a5oMzipsUnHkGYlIczHlZeqEimiLE0DGR4I6sjo+nnAVKAaGxfUJ+d/zfCjie7p8cezCeQksnVHMiaUakwIEe/b9G9Hw29xil7FU6ZLKaMCv31M2Bjdu8dumaAbeRw4gdnUhAUO1rqcPFMyJ4ldTMHJY/pJj7jAUF24vIehH/m98POBftYXhK5g2XhAELdqCBeJJjAog0=
           bucket: waldo-jobs
           local-dir: cordova/platforms/ios/build
           upload-dir: ios-build
@@ -97,9 +97,9 @@ matrix:
       deploy:
         - skip_cleanup: true
           provider: s3
-          access_key_id: AKIAI4WXR4PRA6AJKFYA
+          access_key_id: AKIAJMH545S5JKUIND7A
           secret_access_key:
-            secure: qVXDZge9N2n3n6A9vO+3w1yLotKc7VLqtgNu/aCeSrFThMdEwnJ3Dl7RLcIV0/2R6nWuIg7AYq5CMmWjfV48kAxVtjQpB3J2B4qVgiyvbJZv1B9vIz5Xs+rF/C9SFJGu7UKR2+q7B9Sdo7b9MwueUgvQXGSMGqBuyC6JuHeTIXUB1SpH64hdQglXRTWXv2kX2cwNfKEHWLna8ffK5SdcH6aG0fx+pRJs/V9rVOax6GlVO5sqdmHqpedBAx+MYVEY+rXRyUa3UMujLAAug7V1SmNUOP4HTwqQ48hPnOhQ8o4+hSHCzFMS04Wp06yac+QP73dsbG7yyg5C7/FhXMbiGQRSPwHd5Tf6lFdw3ifipBRp3MUlnUKbFu7udKNptK2O+k9SHShDgZ/uXfm1iQSb7RJxLP6bjpRtlsIBM5hDNrLiJcNRT0OI14VYLVD6HkwIZwTuDeXFi6qAhEuEEh/7Pm8yuR+QYOJ1oJOML8nqjmk+avD/1dFUACjhH4cenkaBRp8UlNCAc6yDAwoPkbTzXssOPvJiSAni+I7FJD6ELnIoF7rTvGf0vHrHExhBFWSF3PTLbfbzxjBWtbdDHj/kUERL1A/O9JMMakKy8WgatOp+xVQ48lYCbi/Zn8fgvQMjdiucsWgWQtHtn36NkfE0jdkp/Gr2cz+BFG28c/eOB8o=
+            secure: Pd2BuDHdn1jxsfOdcfAl/ZIcCJRFT0cULG7eCaLdh0/mkaG9nbfc6+Nm3vk0S0evwHp2yPljzndia3MgepkeXfiYPjTvPvfDT6oKp2UZAUCS9SYWWxEkHyockRigDPEIJqGTg3uTBLQaxHaRSCz2SUL+QYInjo517yJrlVC5IjqhH95Zw7sgeYP2IYbKab5rY4BA2KfxDuAXDFMJPrXejT4rElnRipht1pCree/aA9cDxi48cN2VhZLicb/kI75PSNg3T7PTXfhOxhNpyCxN+wgJ0e6zFTZSW7XKYGVYeJvG1g8YSh/QCNrIx1tPcnyW59yMXNCGhqGoYRJu4Voa5ftbzI9TxlpaoXnyQ1MoKkPN3LV+DMtpXmTTraqw6bTlgrzKDTccQLwDE3g8GYNLNHpWUsSPvph5skaDOcowFrvv91OS5pvN7V0Yk0kDqMACB69gHC/b05Tb2dJlMRVmKfJUJ9HuaIdhA/a5oMzipsUnHkGYlIczHlZeqEimiLE0DGR4I6sjo+nnAVKAaGxfUJ+d/zfCjie7p8cezCeQksnVHMiaUakwIEe/b9G9Hw29xil7FU6ZLKaMCv31M2Bjdu8dumaAbeRw4gdnUhAUO1rqcPFMyJ4ldTMHJY/pJj7jAUF24vIehH/m98POBftYXhK5g2XhAELdqCBeJJjAog0=
           bucket: waldo-jobs-dev
           local-dir: cordova/platforms/android/build
           upload-dir: android-build
@@ -111,9 +111,9 @@ matrix:
 
         - skip_cleanup: true
           provider: s3
-          access_key_id: AKIAI4WXR4PRA6AJKFYA
+          access_key_id: AKIAJMH545S5JKUIND7A
           secret_access_key:
-            secure: qVXDZge9N2n3n6A9vO+3w1yLotKc7VLqtgNu/aCeSrFThMdEwnJ3Dl7RLcIV0/2R6nWuIg7AYq5CMmWjfV48kAxVtjQpB3J2B4qVgiyvbJZv1B9vIz5Xs+rF/C9SFJGu7UKR2+q7B9Sdo7b9MwueUgvQXGSMGqBuyC6JuHeTIXUB1SpH64hdQglXRTWXv2kX2cwNfKEHWLna8ffK5SdcH6aG0fx+pRJs/V9rVOax6GlVO5sqdmHqpedBAx+MYVEY+rXRyUa3UMujLAAug7V1SmNUOP4HTwqQ48hPnOhQ8o4+hSHCzFMS04Wp06yac+QP73dsbG7yyg5C7/FhXMbiGQRSPwHd5Tf6lFdw3ifipBRp3MUlnUKbFu7udKNptK2O+k9SHShDgZ/uXfm1iQSb7RJxLP6bjpRtlsIBM5hDNrLiJcNRT0OI14VYLVD6HkwIZwTuDeXFi6qAhEuEEh/7Pm8yuR+QYOJ1oJOML8nqjmk+avD/1dFUACjhH4cenkaBRp8UlNCAc6yDAwoPkbTzXssOPvJiSAni+I7FJD6ELnIoF7rTvGf0vHrHExhBFWSF3PTLbfbzxjBWtbdDHj/kUERL1A/O9JMMakKy8WgatOp+xVQ48lYCbi/Zn8fgvQMjdiucsWgWQtHtn36NkfE0jdkp/Gr2cz+BFG28c/eOB8o=
+            secure: Pd2BuDHdn1jxsfOdcfAl/ZIcCJRFT0cULG7eCaLdh0/mkaG9nbfc6+Nm3vk0S0evwHp2yPljzndia3MgepkeXfiYPjTvPvfDT6oKp2UZAUCS9SYWWxEkHyockRigDPEIJqGTg3uTBLQaxHaRSCz2SUL+QYInjo517yJrlVC5IjqhH95Zw7sgeYP2IYbKab5rY4BA2KfxDuAXDFMJPrXejT4rElnRipht1pCree/aA9cDxi48cN2VhZLicb/kI75PSNg3T7PTXfhOxhNpyCxN+wgJ0e6zFTZSW7XKYGVYeJvG1g8YSh/QCNrIx1tPcnyW59yMXNCGhqGoYRJu4Voa5ftbzI9TxlpaoXnyQ1MoKkPN3LV+DMtpXmTTraqw6bTlgrzKDTccQLwDE3g8GYNLNHpWUsSPvph5skaDOcowFrvv91OS5pvN7V0Yk0kDqMACB69gHC/b05Tb2dJlMRVmKfJUJ9HuaIdhA/a5oMzipsUnHkGYlIczHlZeqEimiLE0DGR4I6sjo+nnAVKAaGxfUJ+d/zfCjie7p8cezCeQksnVHMiaUakwIEe/b9G9Hw29xil7FU6ZLKaMCv31M2Bjdu8dumaAbeRw4gdnUhAUO1rqcPFMyJ4ldTMHJY/pJj7jAUF24vIehH/m98POBftYXhK5g2XhAELdqCBeJJjAog0=
           bucket: waldo-jobs
           local-dir: cordova/platforms/android/build
           upload-dir: android-build
@@ -156,9 +156,9 @@ matrix:
       deploy:
         - skip_cleanup: true
           provider: s3
-          access_key_id: AKIAI4WXR4PRA6AJKFYA
+          access_key_id: AKIAJMH545S5JKUIND7A
           secret_access_key:
-            secure: qVXDZge9N2n3n6A9vO+3w1yLotKc7VLqtgNu/aCeSrFThMdEwnJ3Dl7RLcIV0/2R6nWuIg7AYq5CMmWjfV48kAxVtjQpB3J2B4qVgiyvbJZv1B9vIz5Xs+rF/C9SFJGu7UKR2+q7B9Sdo7b9MwueUgvQXGSMGqBuyC6JuHeTIXUB1SpH64hdQglXRTWXv2kX2cwNfKEHWLna8ffK5SdcH6aG0fx+pRJs/V9rVOax6GlVO5sqdmHqpedBAx+MYVEY+rXRyUa3UMujLAAug7V1SmNUOP4HTwqQ48hPnOhQ8o4+hSHCzFMS04Wp06yac+QP73dsbG7yyg5C7/FhXMbiGQRSPwHd5Tf6lFdw3ifipBRp3MUlnUKbFu7udKNptK2O+k9SHShDgZ/uXfm1iQSb7RJxLP6bjpRtlsIBM5hDNrLiJcNRT0OI14VYLVD6HkwIZwTuDeXFi6qAhEuEEh/7Pm8yuR+QYOJ1oJOML8nqjmk+avD/1dFUACjhH4cenkaBRp8UlNCAc6yDAwoPkbTzXssOPvJiSAni+I7FJD6ELnIoF7rTvGf0vHrHExhBFWSF3PTLbfbzxjBWtbdDHj/kUERL1A/O9JMMakKy8WgatOp+xVQ48lYCbi/Zn8fgvQMjdiucsWgWQtHtn36NkfE0jdkp/Gr2cz+BFG28c/eOB8o=
+            secure: Pd2BuDHdn1jxsfOdcfAl/ZIcCJRFT0cULG7eCaLdh0/mkaG9nbfc6+Nm3vk0S0evwHp2yPljzndia3MgepkeXfiYPjTvPvfDT6oKp2UZAUCS9SYWWxEkHyockRigDPEIJqGTg3uTBLQaxHaRSCz2SUL+QYInjo517yJrlVC5IjqhH95Zw7sgeYP2IYbKab5rY4BA2KfxDuAXDFMJPrXejT4rElnRipht1pCree/aA9cDxi48cN2VhZLicb/kI75PSNg3T7PTXfhOxhNpyCxN+wgJ0e6zFTZSW7XKYGVYeJvG1g8YSh/QCNrIx1tPcnyW59yMXNCGhqGoYRJu4Voa5ftbzI9TxlpaoXnyQ1MoKkPN3LV+DMtpXmTTraqw6bTlgrzKDTccQLwDE3g8GYNLNHpWUsSPvph5skaDOcowFrvv91OS5pvN7V0Yk0kDqMACB69gHC/b05Tb2dJlMRVmKfJUJ9HuaIdhA/a5oMzipsUnHkGYlIczHlZeqEimiLE0DGR4I6sjo+nnAVKAaGxfUJ+d/zfCjie7p8cezCeQksnVHMiaUakwIEe/b9G9Hw29xil7FU6ZLKaMCv31M2Bjdu8dumaAbeRw4gdnUhAUO1rqcPFMyJ4ldTMHJY/pJj7jAUF24vIehH/m98POBftYXhK5g2XhAELdqCBeJJjAog0=
           bucket: waldo-jobs-dev
           local-dir: dist
           acl: public_read
@@ -168,9 +168,9 @@ matrix:
 
         - skip_cleanup: true
           provider: s3
-          access_key_id: AKIAI4WXR4PRA6AJKFYA
+          access_key_id: AKIAJMH545S5JKUIND7A
           secret_access_key:
-            secure: qVXDZge9N2n3n6A9vO+3w1yLotKc7VLqtgNu/aCeSrFThMdEwnJ3Dl7RLcIV0/2R6nWuIg7AYq5CMmWjfV48kAxVtjQpB3J2B4qVgiyvbJZv1B9vIz5Xs+rF/C9SFJGu7UKR2+q7B9Sdo7b9MwueUgvQXGSMGqBuyC6JuHeTIXUB1SpH64hdQglXRTWXv2kX2cwNfKEHWLna8ffK5SdcH6aG0fx+pRJs/V9rVOax6GlVO5sqdmHqpedBAx+MYVEY+rXRyUa3UMujLAAug7V1SmNUOP4HTwqQ48hPnOhQ8o4+hSHCzFMS04Wp06yac+QP73dsbG7yyg5C7/FhXMbiGQRSPwHd5Tf6lFdw3ifipBRp3MUlnUKbFu7udKNptK2O+k9SHShDgZ/uXfm1iQSb7RJxLP6bjpRtlsIBM5hDNrLiJcNRT0OI14VYLVD6HkwIZwTuDeXFi6qAhEuEEh/7Pm8yuR+QYOJ1oJOML8nqjmk+avD/1dFUACjhH4cenkaBRp8UlNCAc6yDAwoPkbTzXssOPvJiSAni+I7FJD6ELnIoF7rTvGf0vHrHExhBFWSF3PTLbfbzxjBWtbdDHj/kUERL1A/O9JMMakKy8WgatOp+xVQ48lYCbi/Zn8fgvQMjdiucsWgWQtHtn36NkfE0jdkp/Gr2cz+BFG28c/eOB8o=
+            secure: Pd2BuDHdn1jxsfOdcfAl/ZIcCJRFT0cULG7eCaLdh0/mkaG9nbfc6+Nm3vk0S0evwHp2yPljzndia3MgepkeXfiYPjTvPvfDT6oKp2UZAUCS9SYWWxEkHyockRigDPEIJqGTg3uTBLQaxHaRSCz2SUL+QYInjo517yJrlVC5IjqhH95Zw7sgeYP2IYbKab5rY4BA2KfxDuAXDFMJPrXejT4rElnRipht1pCree/aA9cDxi48cN2VhZLicb/kI75PSNg3T7PTXfhOxhNpyCxN+wgJ0e6zFTZSW7XKYGVYeJvG1g8YSh/QCNrIx1tPcnyW59yMXNCGhqGoYRJu4Voa5ftbzI9TxlpaoXnyQ1MoKkPN3LV+DMtpXmTTraqw6bTlgrzKDTccQLwDE3g8GYNLNHpWUsSPvph5skaDOcowFrvv91OS5pvN7V0Yk0kDqMACB69gHC/b05Tb2dJlMRVmKfJUJ9HuaIdhA/a5oMzipsUnHkGYlIczHlZeqEimiLE0DGR4I6sjo+nnAVKAaGxfUJ+d/zfCjie7p8cezCeQksnVHMiaUakwIEe/b9G9Hw29xil7FU6ZLKaMCv31M2Bjdu8dumaAbeRw4gdnUhAUO1rqcPFMyJ4ldTMHJY/pJj7jAUF24vIehH/m98POBftYXhK5g2XhAELdqCBeJJjAog0=
           bucket: waldo-jobs
           local-dir: dist
           acl: public_read
