@@ -29,17 +29,29 @@ module.exports = function(environment) {
     },
 
     gatekeeper: {
-     baseUrl: 'https://localhost:4200/gatekeeper',
+     baseUrl: 'http://165.227.76.52:5000',
 
      tokenOptions: {
-       client_id: '59ee923e1fd71c2ae68ade62',
-       client_secret: '1234567890'
+       client_id: '5a02944ad05605078a17da82',
+       client_secret: 'eqb16wYXmahv85m5NIPXeiJZDdXZscwlGGABPcBNO7a1mZj0rg_ZB9a_SM705Wcv5OMZVe7B1qO05i8SSjnfWMOAPkfI9n4gKCFeD8GHqu7Vacyhqr6O6bLB5hRXIec0wkpTYDZMSyZh6MbgZn_xhRHTEtIyhyZbNCXUNmWakEI'
      }
    }
 
   };
 
+  if (environment === 'development-mirage') {
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    };
+    ENV.gatekeeper.baseUrl = '';
+    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    ENV.APP.LOG_VIEW_LOOKUPS = true;
+  }
+
   if (environment === 'development') {
+    ENV['ember-cli-mirage'] = {
+      enabled: false
+    };
     // ENV.APP.LOG_RESOLVER = true;
     ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
