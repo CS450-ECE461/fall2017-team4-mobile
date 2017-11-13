@@ -29,7 +29,7 @@ module.exports = function(environment) {
     },
 
     gatekeeper: {
-     baseUrl: 'http://165.227.76.52:5000',
+     baseUrl: 'http://165.227.76.52:5000/gatekeeper',
 
      tokenOptions: {
        client_id: '5a02944ad05605078a17da82',
