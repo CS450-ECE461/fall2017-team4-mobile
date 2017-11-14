@@ -9,7 +9,7 @@ module.exports = function(environment) {
     defaultLocationType: 'auto',
     EmberENV: {
       FEATURES: {
-        // Here you can enable experimental features on an ember canary build
+        // Needed for gateeper to use the gatekeeper 'account' model
         'ds-improved-ajax': true
       },
       EXTEND_PROTOTYPES: {
@@ -39,19 +39,7 @@ module.exports = function(environment) {
 
   };
 
-  if (environment === 'development-mirage') {
-    ENV['ember-cli-mirage'] = {
-      enabled: true
-    };
-    ENV.gatekeeper.baseUrl = '';
-    ENV.APP.LOG_ACTIVE_GENERATION = true;
-    ENV.APP.LOG_VIEW_LOOKUPS = true;
-  }
-
   if (environment === 'development') {
-    ENV['ember-cli-mirage'] = {
-      enabled: false
-    };
     // ENV.APP.LOG_RESOLVER = true;
     ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;

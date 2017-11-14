@@ -1,4 +1,3 @@
-import Ember from 'ember';
 
 export default function() {
   this.namespace = '/v1';
@@ -7,12 +6,9 @@ export default function() {
     return schema.users.all();
   });
 
-  this.post('/oauth2/token', (schema) => {
-    return {"cool": "dude"};
+  this.post('/users', (schema,req) => {
+    console.log(req);
   });
 
-  this.get('/accounts', (schema, req) => {
-    Ember.Logger.log(req);
-    return {"user": "Freddy"};
-  })
+  this.passthrough('http://165.227.76.52:5000/**');
 }
