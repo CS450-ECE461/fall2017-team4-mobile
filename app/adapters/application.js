@@ -1,5 +1,6 @@
 import DS from 'ember-data';
 import config from '../config/environment';
+import Ember from 'ember';
 
 export default DS.JSONAPIAdapter.extend({
   router: Ember.inject.service (),
