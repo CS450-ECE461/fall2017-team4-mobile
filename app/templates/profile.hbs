@@ -1,14 +1,8 @@
-{{#each model as |user|}}
+{{#each model as |profile|}}
   <article class="profile">
-    <h3>{{user.name}}</h3>
     <div class="detail email">
-      <span>Email:</span> {{user.email}}
-    </div>
-    <div class="detail city">
-      <span>Location:</span> {{user.city}}, {{user.state}}
-    </div>
-    <div class="detail location">
-      <span>Radius:</span> {{user.radius}} miles
+      <span>Education</span>
+        {{profile.education.[1]}}
     </div>
   </article>
 {{/each}}
