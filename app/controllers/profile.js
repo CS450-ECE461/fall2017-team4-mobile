@@ -9,8 +9,8 @@ export default Controller.extend({
     },
 
     saveProfile() {
-      let profile = this.get('store').createRecord('blah', {"about": "I like cheese"});
-      profile.save();
+      let profile = this.get('store').createRecord('profile', {"about": "I like cheese"});
+      profile.save({"id":2});
     }
   }
 });

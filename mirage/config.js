@@ -1,5 +1,7 @@
+import ENV from '../config/environment';
 
 export default function() {
+  this.urlPrefix = `${ENV.APP.API}`;
   this.namespace = '/v1';
 
   this.get('/users', (schema) => {

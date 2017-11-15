@@ -1,8 +1,9 @@
+import Route from '@ember/routing/route';
 
 import Gatekeeper from 'ember-cli-gatekeeper';
 
-export default Gatekeeper.User.AuthenticatedRoute.extend({
-  // model() {
-  //   return this.get('store').findAll('user');
-  // }
+export default Route.extend({
+  model() {
+    return this.get('store').findAll('user');
+  }
 });

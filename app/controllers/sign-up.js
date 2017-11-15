@@ -5,8 +5,8 @@ export default Controller.extend({
   actions: {
     createAccount () {
 
-      let {email, username, password} = this.getProperties (['email', 'username', 'password']);
-      let account = this.get ('store').createRecord ('account', {username, password, email});
+      let {email, password} = this.getProperties (['email', 'password']);
+      let account = this.get ('store').createRecord ('account', {"username": email, password, email});
       let adapterOptions = {signIn: false};
 
       account.save ({adapterOptions}).then (account => {
@@ -15,7 +15,7 @@ export default Controller.extend({
 
         let user = this.get('store').createRecord('user', {firstname, lastname, city, state, radius, id});
         user.save();
-        this.transitionToRoute('profile');
+        // this.transitionToRoute('profile');
       }).catch (reason => {
         Ember.Logger.log(reason);
       });
