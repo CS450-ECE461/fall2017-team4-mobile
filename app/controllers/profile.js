@@ -6,6 +6,11 @@ export default Controller.extend({
       this.get ('gatekeeper').signOut ().then (() => {
         this.replaceRoute ('sign-in');
       });
+    },
+
+    saveProfile() {
+      let profile = this.get('store').createRecord('blah', {"about": "I like cheese"});
+      profile.save();
     }
   }
 });

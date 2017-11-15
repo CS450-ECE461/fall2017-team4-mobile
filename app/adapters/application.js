@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import config from '../config/environment';
 
 export default DS.JSONAPIAdapter.extend({
   router: Ember.inject.service (),
@@ -6,6 +7,7 @@ export default DS.JSONAPIAdapter.extend({
   gatekeeper: Ember.inject.service (),
 
   // host: Ember.computed.readOnly ('gatekeeper.client.baseUrl'),
+  host: config.APP.API,
 
   namespace: Ember.computed ('gatekeeper.client.version', function () {
     return `v${this.getWithDefault ('gatekeeper.client.version', 1)}`;
