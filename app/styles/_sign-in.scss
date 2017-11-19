@@ -28,6 +28,10 @@
       border-style: solid;
       font-family: $waldo-font;
       border-width: 1px;
+      margin: 10px 30px;
+      width: calc(100% - 90px);
+      padding: 15px;
+      font-size: 12px;
     }
 
     input::placeholder {
@@ -38,13 +42,14 @@
   .mdl-button {
     width: 100%;
     background-color: white;
-    color: black;
+    color: $waldo-red;
     font-family: $waldo-font;
     font-weight: 700;
     text-transform: none;
     border-radius: none;
     border: none;
     height: 50px;
-    font-size: 18px;
+    font-size: 20px;
+    box-shadow: none;
   }
 }
