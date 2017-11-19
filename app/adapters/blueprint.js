@@ -15,7 +15,10 @@ export default DS.JSONAPIAdapter.extend({
 
   headers: Ember.computed ('gatekeeper.accessToken', function () {
     let accessToken = this.get ('gatekeeper.accessToken.access_token');
-    return { Authorization: `Bearer ${accessToken}` };
+    return {
+      Authorization: `Bearer ${accessToken}`,
+      "Content-Type": "application/json"
+    };
   }),
 
   handleResponse (status, headers, payload) {
