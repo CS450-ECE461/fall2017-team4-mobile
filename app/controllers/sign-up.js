@@ -3,6 +3,10 @@ import Ember from 'ember';
 
 export default Controller.extend({
   actions: {
+    /**
+     * First create a gatekeeper account with the email and username being the same.
+     * Then save the user.
+     */
     createAccount () {
 
       let {email, password} = this.getProperties (['email', 'password']);
@@ -15,7 +19,7 @@ export default Controller.extend({
 
         let user = this.get('store').createRecord('user', {firstname, lastname, city, state, radius, id});
         user.save();
-        // this.transitionToRoute('profile');
+        this.transitionToRoute('profile');
       }).catch (reason => {
         Ember.Logger.log(reason);
       });

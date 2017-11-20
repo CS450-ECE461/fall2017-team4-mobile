@@ -2,6 +2,13 @@ import DS from 'ember-data';
 import config from '../config/environment';
 import Ember from 'ember';
 
+/**
+ * This adaper users ember-cli-gatekeeper's code for adding a token to every
+ * request.
+ *
+ * NOTE: The majority of this code came from the ember-cli-gatekeeper repository here:
+ * https://github.com/onehilltech/ember-cli-gatekeeper/blob/9f6f59f901613430f7e1530554017f37c5b5d66f/addon/-lib/user/adapters/rest.js
+ */
 export default DS.JSONAPIAdapter.extend({
   router: Ember.inject.service (),
 
