@@ -1,5 +1,5 @@
-import DS from 'ember-data';
+import {default as BlueprintAdapter} from './blueprint';
 
-export default DS.JSONAPIAdapter.extend({
-  namespace: 'api'
+export default BlueprintAdapter.extend({
+
 });
