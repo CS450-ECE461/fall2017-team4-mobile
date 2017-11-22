@@ -1,12 +1,2 @@
 
-<div class="container">
-<div align="center">
-{{gatekeeper-sign-in-vertical signInComplete=(action "signInComplete")}}
-
-<p>Not a member?</p>
-{{#link-to 'sign-up' class="mdl-button mdl-button--raised mdl-button--colored"}}
-    Create an Account
-{{/link-to}}
-
-</div>
-</div>
+{{sign-in signInComplete=(action "signInComplete")}}

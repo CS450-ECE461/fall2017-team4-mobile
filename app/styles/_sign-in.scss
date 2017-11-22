@@ -1,0 +1,57 @@
+@import "app-variables";
+
+.mdl-route__sign-in {
+  color: white;
+  background-color: $waldo-red;
+  font-family: $waldo-font;
+  text-align: center;
+
+  div.signinInput {
+    margin-bottom: 10px;
+
+    input {
+      color: white;
+      background-color: $waldo-red;
+      border-color: white;
+      border-style: solid;
+      font-family: $waldo-font;
+      border-width: 1px;
+      margin: 10px 30px;
+      width: calc(100% - 90px);
+      padding: 15px;
+      font-size: 12px;
+    }
+
+    input::placeholder {
+      color: white;
+    }
+  }
+
+  a {
+    color: white;
+    font-weight: 600;
+  }
+
+  img {
+    width: 60%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  button {
+    width: 100%;
+    background-color: white;
+    color: $waldo-red;
+    font-family: $waldo-font;
+    font-weight: 700;
+    text-transform: none;
+    border-radius: 0px;
+    border: none;
+    height: 60px;
+    font-size: 20px;
+    box-shadow: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+}
