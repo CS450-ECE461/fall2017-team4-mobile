@@ -7,5 +7,6 @@ export default DS.Model.extend({
   password: DS.attr(),
   city: DS.attr(),
   state: DS.attr(),
-  radius: DS.attr()
+  radius: DS.attr(),
+  profile: DS.belongsTo('profile')
 });
