@@ -2,7 +2,7 @@ import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 
 export default Controller.extend({
-  /// Routes where we don't want to show the application template
+  // Routes where we don't want to show the application template
   nonApplicationRoutes: ['sign-in', 'sign-up'],
 
   /**
