@@ -10,6 +10,9 @@ Router.map(function() {
   this.route('profile');
   this.route('sign-in');
   this.route('sign-up');
+  this.route('search');
+  this.route('chat');
+  this.route('notifications');
 });
 
 export default Router;
