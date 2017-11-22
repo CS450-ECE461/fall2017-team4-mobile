@@ -4,7 +4,7 @@
 
 {{#mdl-form submit=(action "signIn")}}
   {{mdl-textfield type=emailType
-                  value=email
+                  value=username
                   placeholder=emailPlaceholder
                   required=true
                   autocapitalize="none"
@@ -26,10 +26,6 @@
 
 
   {{#mdl-button type="submit"
-                colored=signInButtonColored
-                flat=signInButtonFlat
-                color=signInButtonColor
-                rippleEffect=signInButtonRippleEffect
                 disabled=isSigningIn}}
     {{if isSigningIn signingInText signInText}}
   {{/mdl-button}}
