@@ -11,7 +11,12 @@ Router.map(function() {
   this.route('sign-in');
   this.route('sign-up');
   this.route('search');
-  this.route('chat');
+  this.route('chat', function() {
+    this.route('jobs');
+    this.route('chat');
+    this.route('companies');
+    this.route('requests');
+  });
   this.route('notifications');
 });
 
