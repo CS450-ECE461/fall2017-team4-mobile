@@ -2,31 +2,13 @@
   <div class="error-message">{{errorMessage}}</div>
 {{/if}}
 
-{{#mdl-form submit=(action "signIn")}}
-  {{mdl-textfield type=emailType
-                  value=username
-                  placeholder=emailPlaceholder
-                  required=true
-                  autocapitalize="none"
-                  fullWidth=true
-                  errorMessage=usernameErrorMessage}}
-
-  {{mdl-textfield type=(if showPassword "text" "password")
-                  fullWidth=true
-                  value=password
-                  placeholder=passwordPlaceholder
-                  required=true
-                  autocomplete="off"
-                  autocapitalize="none"
-                  errorMessage=passwordErrorMessage}}
+<form submit={{action 'signIn'}}>
+  <div>{{input value=username placeholder=emailPlaceholder required=true type=emailType errorMessage=emailErrorMessage}}</div>
+  <div>{{input value=password placeholder=passwordPlaceholder required=true type=(if showPassword "text" "password") errorMessage=passwordErrorMessage}}</div>
 
   {{#if recaptcha}}
     {{g-recaptcha-invisible verified=(action (mut recaptcha.value)) expired=(action (mut recaptcha.expired) true) reset=recaptcha.reset}}
   {{/if}}
 
-
-  {{#mdl-button type="submit"
-                disabled=isSigningIn}}
-    {{if isSigningIn signingInText signInText}}
-  {{/mdl-button}}
-{{/mdl-form}}
+  <button type="submit">{{if isSigningIn signingInText signInText}}</button>
+</form>
