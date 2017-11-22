@@ -11,7 +11,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{sign-in}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().trim(), 'Forgot Password? Click Here. Log In');
 
   // Template block usage:
   this.render(hbs`
