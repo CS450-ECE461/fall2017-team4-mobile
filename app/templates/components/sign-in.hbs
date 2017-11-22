@@ -2,7 +2,7 @@
   <div class="error-message">{{errorMessage}}</div>
 {{/if}}
 
-<form submit={{action 'signIn'}}>
+<form action={{action 'signIn'}}>
   <div>{{input value=username placeholder=emailPlaceholder required=true type=emailType errorMessage=emailErrorMessage}}</div>
   <div>{{input value=password placeholder=passwordPlaceholder required=true type=(if showPassword "text" "password") errorMessage=passwordErrorMessage}}</div>
 
