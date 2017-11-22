@@ -2,11 +2,11 @@
   <div class="error-message">{{errorMessage}}</div>
 {{/if}}
 
-  <div>{{input value=username placeholder=emailPlaceholder required=true type=emailType errorMessage=emailErrorMessage}}</div>
-  <div>{{input value=password placeholder=passwordPlaceholder required=true type=(if showPassword "text" "password") errorMessage=passwordErrorMessage}}</div>
+<div>{{input value=username placeholder=emailPlaceholder required=true type=emailType errorMessage=emailErrorMessage}}</div>
+<div>{{input value=password placeholder=passwordPlaceholder required=true type=(if showPassword "text" "password") errorMessage=passwordErrorMessage}}</div>
 
-  {{#if recaptcha}}
-    {{g-recaptcha-invisible verified=(action (mut recaptcha.value)) expired=(action (mut recaptcha.expired) true) reset=recaptcha.reset}}
-  {{/if}}
+{{#if recaptcha}}
+  {{g-recaptcha-invisible verified=(action (mut recaptcha.value)) expired=(action (mut recaptcha.expired) true) reset=recaptcha.reset}}
+{{/if}}
 
-  <button type="submit" {{action 'signIn'}}>{{if isSigningIn signingInText signInText}}</button>
+<button type="submit" {{action 'signIn'}}>{{if isSigningIn signingInText signInText}}</button>
