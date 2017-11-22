@@ -1,8 +1,8 @@
-{{#each model as |profile|}}
+{{#each model}}
   <article class="profile">
     <div class="detail email">
-      <span>Education</span>
-        {{profile.education.[1]}}
+      <span>About</span>
+        {{profile.id}}
     </div>
   </article>
 {{/each}}

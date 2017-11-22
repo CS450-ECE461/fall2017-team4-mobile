@@ -1,11 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  skills: DS.hasMany(),
-  occupations: DS.hasMany(),
-  education: DS.hasMany(),
-  experience: DS.hasMany(),
+  skills: DS.hasMany('skill'),
+  occupations: DS.hasMany('occupation'),
+  education: DS.hasMany('education'),
+  experience: DS.hasMany('experience'),
   about: DS.attr('string'),
-  headline: DS.attr(),
   birthdate: DS.attr('string')
 });
