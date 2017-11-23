@@ -1,7 +1,7 @@
 matrix:
   include:
     ############################# IOS BUILD #############################
-    - if: (branch = master OR branch = dev) AND type = push
+    - if: false
       os: osx
       language: objective-c
       osx_image: xcode8.3
@@ -46,7 +46,7 @@ matrix:
             condition: $TRAVIS_OS_NAME = osx
 
     ############################# ANDROID BUILD #############################
-    - if: (branch = master OR branch = dev) AND type = push
+    - if: false
       os: linux
       sudo: required
       language: android
