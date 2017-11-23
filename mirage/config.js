@@ -20,7 +20,8 @@ export default function() {
           }
         }
       },
-      "included": [{
+      "included": [
+      {
         "type": "profile",
         "id": "5a15da06096b9300013f43a4",
         "attributes": {
@@ -110,8 +111,9 @@ export default function() {
           "title": "Senior Welder",
           "location": "Charleston, SC"
         }
-      }]
-    }
+      }
+    ]
+  }
 });
 
   // this.post('/users', (schema,req) => {
