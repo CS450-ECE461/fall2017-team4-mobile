@@ -2,7 +2,19 @@ import Controller from '@ember/controller';
 import Ember from 'ember';
 
 export default Controller.extend({
+  cities: Ember.computed.alias('model.cities'),
+  states: Ember.computed.alias('model.states'),
+
   actions: {
+
+    selectCity (city) {
+      this.set('city', city);
+    },
+
+    selectState (state) {
+      this.set('state', state);
+    },
+
     /**
      * First create a gatekeeper account with the email and username being the same.
      * Then save the user.
