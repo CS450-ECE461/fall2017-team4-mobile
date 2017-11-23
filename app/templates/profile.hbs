@@ -2,7 +2,7 @@
 <button {{action 'saveProfile'}}>Save Profile</button>
 
 {{#each model as |user|}}
-  <article class="profile">
+  {{!-- <article class="profile">
     <h3>{{user.name}}</h3>
     <div class="detail email">
       <span>Email:</span> {{user.email}}
@@ -13,5 +13,8 @@
     <div class="detail location">
       <span>Radius:</span> {{user.radius}} miles
     </div>
-  </article>
+  </article> --}}
+  {{#each user.profile.education as |skill|}}
+    {{skill.name}}
+  {{/each}}
 {{/each}}
