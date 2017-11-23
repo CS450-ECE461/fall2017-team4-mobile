@@ -45,6 +45,12 @@ export default function() {
               { "type": "education", "id": "2222" },
               { "type": "education", "id": "1111" }
             ]
+          },
+          "experience": {
+            "data" : [
+              { "type": "experience", "id": "4444" },
+              { "type": "experience", "id": "5555" }
+            ]
           }
         }
       },
@@ -85,6 +91,24 @@ export default function() {
           "name": "Colombia University",
           "title": "BS Electrical Engineering",
           "location": "Colombia"
+        }
+      },
+      {
+        "type": "experience",
+        "id": "4444",
+        "attributes": {
+          "name": "Rolls-Royce",
+          "title": "Super Duper Technical Advisor",
+          "location": "San Fransisco, CA"
+        }
+      },
+      {
+        "type": "experience",
+        "id": "5555",
+        "attributes": {
+          "name": "Cummins",
+          "title": "Senior Welder",
+          "location": "Charleston, SC"
         }
       }]
     }
