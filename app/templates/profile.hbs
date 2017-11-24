@@ -14,7 +14,7 @@
       <span>Radius:</span> {{user.radius}} miles
     </div>
   </article> --}}
-  {{#each user.profile.experience as |skill|}}
+  {{user.profile as |skill|}}
     {{skill.name}}
   {{/each}}
 {{/each}}
