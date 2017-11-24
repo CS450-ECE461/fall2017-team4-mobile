@@ -19,12 +19,12 @@
     <div>{{input value=phone placeholder="Phone"}}</div>
     <div class="sign-up-dropdowns">
       <div id="left-dropdown">
-        {{#power-select options=cities searchField="name" selected=city placeholder="City" onchange=(action "selectCity") as |city|}}
+        {{#power-select options=cities verticalPosition='above' renderInPlace=true searchField="name" selected=city placeholder="City" onchange=(action "selectCity") as |city|}}
           {{city.name}}
         {{/power-select}}
       </div>
       <div id="right-dropdown">
-        {{#power-select options=states searchField="name" selected=state placeholder="State" onchange=(action "selectState") as |state|}}
+        {{#power-select options=states verticalPosition='above' renderInPlace=true searchField="name" selected=state placeholder="State" onchange=(action "selectState") as |state|}}
           {{state.name}}
         {{/power-select}}
       </div>
