@@ -1,3 +1,21 @@
+#ember-basic-dropdown-wormhole {
+  .ember-power-select-dropdown.ember-basic-dropdown-content--above {
+    border-radius: 0px;
+    font-family: $waldo-font;
+    background-color: $waldo-red;
+    border-color: white;
+    color: white;
+    font-size: 12px;
+  }
+
+  .ember-power-select-option[aria-current="true"] {
+    background-color: $waldo-red;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+  }
+}
+
 .mdl-route__sign-up {
   background-color: $waldo-red;
   color: white;
@@ -83,9 +101,20 @@
     border-radius: 0px;
     line-height: unset;
     min-height: unset;
+    text-align: left;
+  }
+
+  .ember-power-select-trigger:focus {
+    border-color: white;
   }
 
   .ember-power-select-placeholder {
+    color: white;
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .ember-power-select-selected-item {
     color: white;
     text-align: left;
     margin-left: 0px;
