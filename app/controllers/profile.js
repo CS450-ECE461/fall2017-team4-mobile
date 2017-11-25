@@ -6,6 +6,11 @@ export default Controller.extend({
       this.get ('gatekeeper').signOut ().then (() => {
         this.replaceRoute ('sign-in');
       });
+    },
+
+    saveProfile() {
+      this.get('model.skills').pushObject(this.get('store').createRecord('skill', {"name": "FlubDub"}));
+      this.get('model').save();
     }
   }
 });

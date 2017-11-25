@@ -4,7 +4,7 @@ export default function() {
   this.urlPrefix = `${ENV.APP.API}`;
   this.namespace = '/v1';
 
-  this.get('/users', () => {
+  this.get('/users/5a15da06096b9300013f43a3', () => {
     return {
       "data": {
         "id": "5a15da06096b9300013f43a3",
