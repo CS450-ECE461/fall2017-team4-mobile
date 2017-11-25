@@ -1,2 +1,25 @@
-Chat Heading
+<header>
+  <span class="chat-title ">Chat</span>
+  <div class="search-div">
+    {{search-bar placeholder="Search Messages"}}
+    <img src="https://png.icons8.com/search-filled/ios7/39/F9C20A">
+  </div>
+  <nav>
+    {{#link-to "chat.jobs" class='nav-button'}}
+        <span>Jobs</span>
+    {{/link-to}}
+
+    {{#link-to "chat.chat" class='nav-button'}}
+        <span>Chat</span>
+    {{/link-to}}
+
+    {{#link-to "chat.companies" class='nav-button'}}
+        <span>Companies</span>
+    {{/link-to}}
+
+    {{#link-to "chat.requests" class='nav-button'}}
+        <span>Requests</span>
+    {{/link-to}}
+  </nav>
+</header>
 {{outlet}}

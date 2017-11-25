@@ -2,6 +2,7 @@
 @import "app-variables";
 @import "sign-in";
 @import "ember-power-select";
+@import "mdl-route__chat";
 
 nav.application {
   display: flex;
@@ -20,7 +21,7 @@ nav.application {
       width: 27px;
     }
     width: 25%;
-    height: 50px;
+    height: $nav-bar-height;
     background: red;
     border: white;
     display: flex;
