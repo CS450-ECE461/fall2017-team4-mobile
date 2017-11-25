@@ -8,6 +8,14 @@ export default function() {
     return schema.users.all();
   });
 
+  this.get('/cities', (schema) => {
+    return schema.cities.all();
+  });
+
+  this.get('/states', (schema) => {
+    return schema.states.all();
+  });
+
   // this.post('/users', (schema,req) => {
   //   console.log(req);
   // });
