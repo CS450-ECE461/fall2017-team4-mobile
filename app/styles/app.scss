@@ -35,3 +35,7 @@ nav.application {
     justify-content: center;
   }
 }
+
+main {
+  height: calc(100vh - #{$nav-bar-height});
+}

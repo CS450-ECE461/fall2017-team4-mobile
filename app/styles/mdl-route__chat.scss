@@ -54,3 +54,10 @@ header {
     }
   }
 }
+
+.chat-viewport {
+  height: calc(100% - #{$chat-header-height} - #{$nav-bar-height});
+  top: $chat-header-height;
+  position: absolute;
+  width: 100%;
+}

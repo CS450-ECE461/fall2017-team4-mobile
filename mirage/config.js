@@ -16,6 +16,10 @@ export default function() {
     return schema.states.all();
   });
 
+  this.get('/messages?userId=1&employeeId=1', (schema) => {
+    return schema.states.all();
+  });
+
   // this.post('/users', (schema,req) => {
   //   console.log(req);
   // });
