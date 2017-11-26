@@ -18,6 +18,7 @@ Router.map(function() {
     this.route('requests');
   });
   this.route('notifications');
+  this.route('conversation', {path: 'conversation/:id'});
 });
 
 export default Router;
