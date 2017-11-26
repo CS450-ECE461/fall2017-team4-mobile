@@ -1,10 +1,10 @@
 import Component from '@ember/component';
-import Ember from 'ember';
 
 export default Component.extend({
   imageSrc: '',
   message: '',
   personName: '',
+  companyName: '',
 
   classNames: ['conversation-entry']
 });

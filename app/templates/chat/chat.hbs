@@ -1,6 +1,7 @@
 {{#each model as |entry|}}
   {{conversation-entry imageSrc=entry.conversation.employee.image
                        message=entry.messagePreview
+                       companyName="@Cool Company"
                        personName=entry.conversation.employee.name}}
 {{/each}}
 {{outlet}}
