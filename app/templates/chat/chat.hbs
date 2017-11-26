@@ -1,4 +1,6 @@
-{{#each model as |conversation|}}
-  {{conversation-entry src=conversation.employee.image textPreview="Sup"}}
+{{#each model as |entry|}}
+  {{conversation-entry imageSrc=entry.conversation.employee.image
+                       message=entry.messagePreview
+                       personName=entry.conversation.employee.name}}
 {{/each}}
 {{outlet}}

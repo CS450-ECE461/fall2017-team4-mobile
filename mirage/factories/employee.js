@@ -14,6 +14,7 @@ export default Factory.extend({
   },
 
   image() {
-    return faker.image.animals();
+    // return faker.image.nature();
+    return "https://avatars0.githubusercontent.com/ml/4?s=120&v=4";
   }
 });
