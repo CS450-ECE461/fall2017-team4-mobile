@@ -112,8 +112,6 @@
       width: calc(100% + 2px);
       border-width: 1px;
       border-style: solid;
-      font-size: 12px;
-      line-height: 6.25;
     }
 
     .ember-power-select-option[aria-current="true"] {
@@ -127,6 +125,10 @@
       width: 100%;
       margin: 0px;
       padding: 0px;
+    }
+
+    .ember-power-select-search-input:focus {
+      border-color: white;
     }
   }
 
