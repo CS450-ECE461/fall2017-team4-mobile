@@ -1,17 +1,55 @@
-<button {{action 'signOut'}}>Sign Out</button>
-<button {{action 'saveProfile'}}>Save Profile</button>
+<div class="div-outer-white">
+  <header>
+  </header>
 
-{{#each model as |user|}}
-  <article class="profile">
-    <h3>{{user.name}}</h3>
-    <div class="detail email">
-      <span>Email:</span> {{user.email}}
+  <div class="div-inner-grey">
+
+    <div class="div-content">
+
+      <div class="profile-top">
+        <img src="assets/passed.png">
+        <strong><h1> Courtney Smith </h1></strong>
+        <h2> Visual Designer & Photographer </h2>
+        </div>
+
+        <div class="profile-buttons">
+        <button class="portfolio-button" {{action 'viewPortfolio'}}>PORTFOLIO</button>
+        <button class="resume-button" {{action 'viewResume'}}>RESUME</button>
+      </div>
+
+      <div class="div-experience-list">
+        <h3> Experience </h3>
+          {{#each model as |experience|}}
+
+          {{profile-list
+            imageSrc='assets/passed.png'
+            jobName='Graphical Design Intern'
+            dateRange='2013 - 2015'
+            companyName='IUPUI'
+            location='Indianapolis, IN'
+            buttonText='...see more' }}
+
+          <hr>
+
+        {{/each}}
+      </div>
+
+      <div class="div-education-list">
+        <h3> Education </h3>
+        {{#each model as |experience|}}
+        {{profile-list
+          imageSrc='assets/passed.png'
+          jobName='Visual Communications'
+          dateRange='2013 - 2017'
+          companyName='IUPUI'
+          location='Indianapolis, IN'
+          buttonText='...see more' }}
+        <hr>
+
+        {{/each}}
+      </div>
+
+
     </div>
-    <div class="detail city">
-      <span>Location:</span> {{user.city}}, {{user.state}}
-    </div>
-    <div class="detail location">
-      <span>Radius:</span> {{user.radius}} miles
-    </div>
-  </article>
-{{/each}}
+  </div>
+</div>

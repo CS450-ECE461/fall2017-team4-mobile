@@ -4,6 +4,7 @@
 @import "ember-power-select";
 @import "mdl-route__chat";
 @import "components/conversation-entry";
+@import "profile";
 
 nav.application {
   display: flex;
@@ -12,6 +13,7 @@ nav.application {
   width: 100%;
   position: fixed;
   bottom: 0;
+  z-index:20;
 
   div, .nav-button{
     div {
