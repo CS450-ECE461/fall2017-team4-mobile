@@ -10,13 +10,21 @@
   </button>
 
   <div>
-    <div>Email: {{input value=email}}</div>
-    <div>Password: {{input value=password}}</div>
-    <div>First Name: {{input value=firstname}}</div>
-    <div>Last Name: {{input value=lastname}}</div>
-    <div>City: {{input value=city}}</div>
-    <div>State: {{input value=state}}</div>
-    <div>Radius: {{input value=radius}}</div>
+    <div>{{input value=firstname placeholder="First Name"}}</div>
+    <div>{{input value=lastname placeholder="Last Name"}}</div>
+    <div>{{input value=email placeholder="Email"}}</div>
+    <div>{{input value=phone placeholder="Phone"}}</div>
+    <div>
+      {{#power-select options=cities searchField="name" selected=city placeholder="City" onchange=(action "selectCity") as |city|}}
+        {{city.name}}
+      {{/power-select}}
+    </div>
+    <div>
+      {{#power-select options=states searchField="name" selected=state placeholder="State" onchange=(action "selectState") as |state|}}
+        {{state.name}}
+      {{/power-select}}
+    </div>
+    <div>{{input value=password placeholder="Password"}}</div>
   </div>
   <button {{action 'createAccount'}}>Sign Up</button>
 

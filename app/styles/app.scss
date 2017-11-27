@@ -1,6 +1,9 @@
 @import "reset";
 @import "app-variables";
 @import "sign-in";
+@import "ember-power-select";
+@import "mdl-route__chat";
+@import "components/conversation-entry";
 
 nav.application {
   display: flex;
@@ -19,7 +22,7 @@ nav.application {
       width: 27px;
     }
     width: 25%;
-    height: 50px;
+    height: $nav-bar-height;
     background: red;
     border: white;
     display: flex;
@@ -32,4 +35,8 @@ nav.application {
     color: white;
     justify-content: center;
   }
+}
+
+main {
+  height: calc(100vh - #{$nav-bar-height});
 }
