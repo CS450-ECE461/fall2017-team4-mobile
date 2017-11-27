@@ -1,43 +1,55 @@
 <div class="div-outer-white">
-<header>
+  <header>
+  </header>
 
-</header>
+  <div class="div-inner-grey">
 
-<div class="div-inner-grey">
+    <div class="div-content">
 
-<div class="div-content">
+      <div class="profile-top">
+        <img src="assets/passed.png">
+        <strong><h1> Courtney Smith </h1></strong>
+        <h2> Visual Designer & Photographer </h2>
+        </div>
 
-<div class="profile-top">
-<img src="assets/passed.png">
-<strong><h1> Courtney Smith </h1></strong>
-<h2> Visual Designer & Photographer </h2>
-</div>
+        <div class="profile-buttons">
+        <button class="portfolio-button" {{action 'viewPortfolio'}}>PORTFOLIO</button>
+        <button class="resume-button" {{action 'viewResume'}}>RESUME</button>
+      </div>
 
-<div class="profile-buttons">
-<button class="portfolio-button" {{action 'viewPortfolio'}}>PORTFOLIO</button>
-<button class="resume-button" {{action 'viewResume'}}>RESUME</button>
-</div>
+      <div class="div-experience-list">
+        <h3> Experience </h3>
+          {{#each model as |experience|}}
 
-<div class="div-experience-list">
-<h3> Experience </h3>
-{{#each model as |experience|}}
+          {{profile-list
+            imageSrc='assets/passed.png'
+            jobName='Graphical Design Intern'
+            dateRange='2013 - 2015'
+            companyName='IUPUI'
+            location='Indianapolis, IN'
+            buttonText='...see more' }}
 
-{{profile-list}}
-<hr>
+          <hr>
 
-{{/each}}
-</div>
+        {{/each}}
+      </div>
 
-<div class="div-education-list">
-<h3> Education </h3>
-{{#each model as |experience|}}
-{{profile-list}}
-<hr>
+      <div class="div-education-list">
+        <h3> Education </h3>
+        {{#each model as |experience|}}
+        {{profile-list
+          imageSrc='assets/passed.png'
+          jobName='Visual Communications'
+          dateRange='2013 - 2017'
+          companyName='IUPUI'
+          location='Indianapolis, IN'
+          buttonText='...see more' }}
+        <hr>
 
-{{/each}}
-</div>
+        {{/each}}
+      </div>
 
 
-</div>
-</div>
+    </div>
+  </div>
 </div>
