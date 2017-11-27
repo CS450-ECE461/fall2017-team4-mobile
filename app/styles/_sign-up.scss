@@ -27,7 +27,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 15px;
+    margin: 12px;
+    font-size: 16px;
 
     hr {
       margin: 8px 20px;
@@ -45,8 +46,8 @@
     border-width: 1px;
     margin: 10px 30px;
     width: calc(100% - 90px);
-    padding: 15px;
-    font-size: 12px;
+    padding: 12px;
+    font-size: 16px;
   }
 
   input::placeholder {
@@ -78,8 +79,8 @@
     font-family: $waldo-font;
     border-width: 1px;
     width: calc(100% - 30px);
-    padding: 15px;
-    font-size: 12px;
+    padding: 12px;
+    font-size: 16px;
     border-radius: 0px;
     line-height: unset;
     min-height: unset;
