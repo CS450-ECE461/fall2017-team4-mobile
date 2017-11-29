@@ -1,5 +1,19 @@
 <div class="div-outer-white">
+
+ <div class="div-upper-blue">
+ </div>
+
   <header>
+    <div class="div-toolbar">
+      <img class="edit-button" src="https://png.icons8.com/pencil/dotty/35/ffffff">
+      <span class="profile-title">My Profile</span>
+      <img class="settings-button" src="https://png.icons8.com/gear/p1em/30/ffffff">
+    </div>
+    <div class="search-div">
+        {{search-bar placeholder="Search Profile"}}
+        <img src="https://png.icons8.com/search-filled/ios7/39/00B5AF">
+   </div>
+    <br/>
   </header>
 
   <div class="div-inner-grey">
@@ -7,7 +21,7 @@
     <div class="div-content">
 
       <div class="profile-top">
-        <img src="assets/passed.png">
+        <img src="https://avatars0.githubusercontent.com/ml/4?s=120&v=4">
         <strong><h1> Courtney Smith </h1></strong>
         <h2> Visual Designer & Photographer </h2>
         </div>
@@ -22,7 +36,7 @@
           {{#each model as |experience|}}
 
           {{profile-list
-            imageSrc='assets/passed.png'
+            imageSrc='https://avatars0.githubusercontent.com/ml/4?s=120&v=4'
             jobName='Graphical Design Intern'
             dateRange='2013 - 2015'
             companyName='IUPUI'
@@ -38,7 +52,7 @@
         <h3> Education </h3>
         {{#each model as |experience|}}
         {{profile-list
-          imageSrc='assets/passed.png'
+          imageSrc='https://avatars0.githubusercontent.com/ml/4?s=120&v=4'
           jobName='Visual Communications'
           dateRange='2013 - 2017'
           companyName='IUPUI'
