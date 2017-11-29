@@ -8,44 +8,36 @@
       <span class="chat-title">Chat</span>
       <span>Filter</span>
     </div>
-    <div class="search-div">
       {{search-bar
         placeholder=chatController.searchBarText
         onInput=(action chatController.actions.onSearchBarInput)
         value=chatController.searchValue
+        image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
       }}
-      <img src="https://png.icons8.com/search-filled/ios7/39/F9C20A">
-    </div>
   {{else if (eq appController.currentRouteName "chat.jobs")}}
     <span class="chat-title">Jobs</span>
-    <div class="search-div">
       {{search-bar
         placeholder=jobsController.searchBarText
         onInput=(action jobsController.actions.onSearchBarInput)
         value=jobsController.searchValue
+        image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
       }}
-      <img src="https://png.icons8.com/search-filled/ios7/39/F9C20A">
-    </div>
   {{else if (eq appController.currentRouteName "chat.companies")}}
     <span class="chat-title">Companies</span>
-    <div class="search-div">
       {{search-bar
         placeholder=companyController.searchBarText
         onInput=(action companyController.actions.onSearchBarInput)
         value=companyController.searchValue
+        image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
       }}
-      <img src="https://png.icons8.com/search-filled/ios7/39/F9C20A">
-    </div>
   {{else if (eq appController.currentRouteName "chat.requests")}}
     <span class="chat-title">Requests</span>
-    <div class="search-div">
       {{search-bar
         placeholder=requestController.searchBarText
         onInput=(action requestController.actions.onSearchBarInput)
         value=requestController.searchValue
+        image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
       }}
-      <img src="https://png.icons8.com/search-filled/ios7/39/F9C20A">
-    </div>
   {{/if}}
   <nav>
     {{#link-to "chat.jobs" class='nav-button'}}

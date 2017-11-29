@@ -4,6 +4,7 @@ export default Component.extend({
   value: '',
   classNames: ['search-bar'],
   placeholder: 'Search',
+  image:'',
 
   onInput: () => {},
 
