@@ -1,13 +1,9 @@
 <header>
   {{#if (eq appController.currentRouteName "chat.chat")}}
-    <div>
-      {{!-- TODO Make the back button conditional on whether or not there is a "back" Maybe make this a Component
-      wher the "back" only shows if there is a back? And make the "filter" a boolean optional? and have some auto style
-      (like flex) but height can be adjusted?--}}
-      <span>Back</span>
-      <span class="chat-title">Chat</span>
-      <span>Filter</span>
-    </div>
+      {{top-header
+        title="Chat"
+        clickFilter=(action chatController.actions.onClickFilter)
+      }}
       {{search-bar
         placeholder=chatController.searchBarText
         onInput=(action chatController.actions.onSearchBarInput)
@@ -15,7 +11,9 @@
         image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
       }}
   {{else if (eq appController.currentRouteName "chat.jobs")}}
-    <span class="chat-title">Jobs</span>
+      {{top-header
+         title="Jobs"
+       }}
       {{search-bar
         placeholder=jobsController.searchBarText
         onInput=(action jobsController.actions.onSearchBarInput)
@@ -23,7 +21,9 @@
         image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
       }}
   {{else if (eq appController.currentRouteName "chat.companies")}}
-    <span class="chat-title">Companies</span>
+      {{top-header
+        title="Companies"
+      }}
       {{search-bar
         placeholder=companyController.searchBarText
         onInput=(action companyController.actions.onSearchBarInput)
@@ -31,7 +31,9 @@
         image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
       }}
   {{else if (eq appController.currentRouteName "chat.requests")}}
-    <span class="chat-title">Requests</span>
+      {{top-header
+        title="Requests"
+      }}
       {{search-bar
         placeholder=requestController.searchBarText
         onInput=(action requestController.actions.onSearchBarInput)

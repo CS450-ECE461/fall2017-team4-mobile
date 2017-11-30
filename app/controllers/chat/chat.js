@@ -6,6 +6,10 @@ export default Controller.extend({
   actions: {
     onSearchBarInput(value) {
       console.log(value)
+    },
+
+    onClickFilter() {
+      console.log("I'm filtering!!")
     }
   }
 });
