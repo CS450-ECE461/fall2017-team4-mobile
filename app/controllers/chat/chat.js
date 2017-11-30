@@ -1,15 +1,16 @@
 import Controller from '@ember/controller';
+import Ember from "ember";
 
 export default Controller.extend({
   searchBarText: "Search Saved Chat",
 
   actions: {
     onSearchBarInput(value) {
-      console.log(value)
+      Ember.Logger.log(value)
     },
 
     onClickFilter() {
-      console.log("I'm filtering!!")
+      Ember.Logger.log("I'm filtering!!")
     }
   }
 });

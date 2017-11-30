@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-// import ChatController from "./chat/chat";
+import Ember from "ember";
 
 export default Controller.extend({
   appController: Ember.inject.controller('application'),
