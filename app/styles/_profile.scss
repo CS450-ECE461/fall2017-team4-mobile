@@ -13,12 +13,17 @@
   }
 
   header {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: $waldo-blue;
     position: fixed;
     z-index:20;
     height:20%;
     width:90%;
-    margin-left:5%
+    margin-left:5%;
   }
 
   .div-toolbar{
