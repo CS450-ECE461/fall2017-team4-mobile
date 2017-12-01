@@ -1,0 +1,25 @@
+.top-header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color:white;
+
+  span {
+    width: 33.33%;
+  }
+
+  .back {
+    font-size: 12.5px;
+    text-align: left;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .filter {
+    font-size: 12.5px;
+    text-align: right;
+  }
+}
