@@ -2,23 +2,21 @@
   {{#if (eq appController.currentRouteName "detailed-search.searches")}}
     {{top-header
       title="Job Search"
-    }}
-    {{search-bar
-
-    }}
-    {{search-bar
-
+      clickFilter=(action onClickFilter)
+      clickBack=(action onClickBack)
     }}
   {{else if (eq appController.currentRouteName "detailed-search.search-results")}}
     {{top-header
       title="Search Results"
-    }}
-    {{search-bar
-
-    }}
-    {{search-bar
-
+      clickFilter=(action onClickFilter)
+      clickBack=(action onClickBack)
     }}
   {{/if}}
+  {{search-bar
+
+  }}
+  {{search-bar
+
+  }}
 </header>
 {{outlet}}
