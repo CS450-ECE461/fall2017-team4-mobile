@@ -3,6 +3,7 @@ import Ember from "ember";
 
 export default Controller.extend({
   searchBarText: "Search Saved Chat",
+  searchValue: '',
 
   actions: {
     onSearchBarInput(value) {
