@@ -8,7 +8,7 @@
         placeholder=chatController.searchBarText
         onInput=(action chatController.actions.onSearchBarInput)
         value=chatController.searchValue
-        image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
+        image=(icon-asset "searchChat.png")
       }}
   {{else if (eq appController.currentRouteName "chat.jobs")}}
       {{top-header
@@ -18,7 +18,7 @@
         placeholder=jobsController.searchBarText
         onInput=(action jobsController.actions.onSearchBarInput)
         value=jobsController.searchValue
-        image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
+        image=(icon-asset "searchChat.png")
       }}
   {{else if (eq appController.currentRouteName "chat.companies")}}
       {{top-header
@@ -28,7 +28,7 @@
         placeholder=companyController.searchBarText
         onInput=(action companyController.actions.onSearchBarInput)
         value=companyController.searchValue
-        image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
+        image=(icon-asset "searchChat.png")
       }}
   {{else if (eq appController.currentRouteName "chat.requests")}}
       {{top-header
@@ -38,7 +38,7 @@
         placeholder=requestController.searchBarText
         onInput=(action requestController.actions.onSearchBarInput)
         value=requestController.searchValue
-        image="https://png.icons8.com/search-filled/ios7/39/F9C20A"
+        image=(icon-asset "searchChat.png")
       }}
   {{/if}}
   <nav>
