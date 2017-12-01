@@ -1,0 +1,24 @@
+<header>
+  {{#if (eq appController.currentRouteName "detailed-search.searches")}}
+    {{top-header
+      title="Job Search"
+    }}
+    {{search-bar
+
+    }}
+    {{search-bar
+
+    }}
+  {{else if (eq appController.currentRouteName "detailed-search.search-results")}}
+    {{top-header
+      title="Search Results"
+    }}
+    {{search-bar
+
+    }}
+    {{search-bar
+
+    }}
+  {{/if}}
+</header>
+{{outlet}}
