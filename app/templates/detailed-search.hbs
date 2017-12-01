@@ -13,10 +13,16 @@
     }}
   {{/if}}
   {{search-bar
-
+    placeholder=searchBarText
+    onInput=(action onSearchBarInput)
+    value=searchValue
+    image=(icon-asset "searchHome.png")
   }}
   {{search-bar
-
+    placeholder=loactionText
+    onInput=(action onLocationInput)
+    value=locationValue
+    image=(icon-asset ".png")
   }}
 </header>
 {{outlet}}

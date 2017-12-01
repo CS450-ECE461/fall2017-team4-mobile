@@ -8,6 +8,8 @@ export default Controller.extend({
 
   searchBarText: "Job title or company",
   searchValue: '',
+  locationText: "Location",
+  locationValue: '',
 
   actions: {
     onClickFilter() {
@@ -19,6 +21,10 @@ export default Controller.extend({
     },
 
     onSearchBarInput(value) {
+      Ember.logger.log(value);
+    }
+
+    onLocationInput(value) {
       Ember.logger.log(value);
     }
   }
