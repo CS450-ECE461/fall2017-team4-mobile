@@ -1,0 +1,29 @@
+.mdl-route__detailed-search {
+  font-family: $waldo-font;
+
+  header {
+    background-color: $waldo-red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 160px;
+
+    .search-bars {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+    }
+
+    span.title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}
