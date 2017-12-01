@@ -6,5 +6,19 @@ export default Component.extend({
   personName: '',
   companyName: '',
 
-  classNames: ['conversation-entry']
+  classNames: ['conversation-entry'],
+
+  onDotsClicked: () => {},
+
+  onArrowClicked: () => {},
+
+  actions: {
+    clickArrow() {
+      this.get('onArrowClicked')()
+    },
+
+    clickDots() {
+      this.get('onDotsClicked')()
+    }
+  }
 });

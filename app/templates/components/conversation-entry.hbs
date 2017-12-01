@@ -6,5 +6,8 @@
   </div>
   <span>{{message}}</span>
 </div>
-<img src="https://png.icons8.com/forward/win8/50/000000" class="arrow">
+<div class="conversation-options">
+  <img src={{icon-asset "controlForward.png"}} {{action 'clickArrow'}} class="arrow"/>
+  <img src={{icon-asset "controlOptions.png"}} {{action 'clickDots'}} class="dots"/>
+</div>
 {{yield}}
