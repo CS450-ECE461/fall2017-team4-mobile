@@ -13,19 +13,19 @@ export default Controller.extend({
 
   actions: {
     onClickFilter() {
-      Ember.logger.log("Filtering Job Search");
+      Ember.Logger.log("Filtering Job Search");
     },
 
     onClickBack() {
-      Ember.logger.log("Back Button Clicked");
+      Ember.Logger.log("Back Button Clicked");
     },
 
     onSearchBarInput(value) {
-      Ember.logger.log(value);
-    }
+      Ember.Logger.log(value);
+    },
 
     onLocationInput(value) {
-      Ember.logger.log(value);
+      Ember.Logger.log(value);
     }
   }
 });
