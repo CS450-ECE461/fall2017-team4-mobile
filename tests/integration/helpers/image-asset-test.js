@@ -12,6 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{image-asset inputValue}}`);
 
-  assert.equal(this.$().text().trim(), '1234');
+  assert.equal(this.$().text().trim(), 'https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/images/source/1234');
 });
-
