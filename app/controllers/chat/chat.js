@@ -19,7 +19,12 @@ export default Controller.extend({
     },
 
     startConversation() {
-      Ember.Logger.log("Starting a Conversation");
+      let convo = this.get('store').createRecord('chat',
+        {
+            user: this.get('gatekeeper.currentUser.id'),
+            employee: "employee2"
+        });
+        convo.save()
     }
   }
 });

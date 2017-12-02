@@ -24,10 +24,10 @@ export default function() {
     return schema.messages.find(request.params.id);
   })
 
-  this.get('/conversations', {
+  this.get('/chats', {
       data: [
         {
-          type:"conversation",
+          type:"chat",
           id: "1",
           relationships: {
             messages: {
@@ -45,7 +45,7 @@ export default function() {
           }
         },
         {
-          type:"conversation",
+          type:"chat",
           id: "2",
           relationships: {
             messages: {
