@@ -1,10 +1,10 @@
 {{#each model as |entry|}}
-  {{!-- {{#link-to 'conversation' entry.conversation}} --}}
-  {{conversation-entry conversation=entry.conversation
-                       message=entry.messagePreview
-                       companyName="@Cool Company"
-                       onArrowClicked=(action 'onArrowClicked')
-                    }}
-  {{!-- {{/link-to}} --}}
+  {{conversation-entry
+    conversation=entry.conversation
+    message=entry.messagePreview
+    companyName="@Cool Company"
+    onArrowClicked=(action 'onArrowClicked')
+  }}
 {{/each}}
+  <img src={{icon-asset "waldoChat.png"}} class="edit-image" {{action "startConversation"}}/>
 {{outlet}}

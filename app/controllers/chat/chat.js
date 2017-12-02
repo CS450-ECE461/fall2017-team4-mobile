@@ -16,6 +16,10 @@ export default Controller.extend({
 
     onArrowClicked(conversation) {
       this.transitionToRoute('conversation', conversation)
+    },
+
+    startConversation() {
+      Ember.Logger.log("Starting a Conversation");
     }
   }
 });
