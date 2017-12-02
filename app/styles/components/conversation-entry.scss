@@ -42,8 +42,30 @@
     .employee-title {
         display: flex;
         flex-direction: column;
-
     }
   }
+}
 
+.contact-icons {
+
+  background: black;
+  height: 60px;
+  width: 120px;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -90px;
+
+  .facetime {
+    width: 40px;
+  }
+
+  .call{
+    width: 40px;
+  }
+}
+
+.connector {
+  margin-top:56px;
 }
