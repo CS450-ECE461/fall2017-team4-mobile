@@ -8,17 +8,18 @@ moduleForComponent('tethered-box', 'Integration | Component | tethered box', {
 test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
-
-  this.render(hbs`{{tethered-box}}`);
-
-  assert.equal(this.$().text().trim(), '');
-
+  this.$().add('div').addClass("thingie");
   // Template block usage:
   this.render(hbs`
-    {{#tethered-box}}
-      template block text
+    {{#tethered-box
+      target=".thingie"
+      boxAttachment="top right"
+      boxTargetAttachment="middle right"
+      connectorAttachment="top center"
+      connectorTargetAttachment="bottom center"
+    }}
     {{/tethered-box}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$(".content").text(), '');
 });
