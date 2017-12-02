@@ -1,11 +1,18 @@
 
 {{#liquid-tether
   target=target
+  attachment=connectorAttachment
+  targetAttachment=connectorTargetAttachment
+}}
+    <div class="connector"></div>
+{{/liquid-tether}}
+
+{{#liquid-tether
+  target=".connector"
   attachment=boxAttachment
   targetAttachment=boxTargetAttachment
-}}
+  }}
   <div class="box">
-    <div class="connector"></div>
     {{yield}}
   </div>
 {{/liquid-tether}}
