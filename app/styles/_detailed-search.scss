@@ -25,4 +25,36 @@
       font-size: 18px;
     }
   }
+
+  .search-list-buttons {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    margin-top: 160px;
+    background-color: black;
+    height: 45px;
+    width: 100%;
+
+    button {
+      height: 100%;
+      font-family: $waldo-font;
+      color: white;
+      width: 50%;
+      text-align: center;
+      border-radius: 0px;
+      font-weight: 600;
+    }
+
+    .saved-search-button {
+      border-right: 1px;
+      border-right-color: white;
+      border-right-style: solid;
+    }
+
+    .recent-search-button {
+      border-left: 1px;
+      border-left-color: white;
+      border-left-style: solid;
+    }
+  }
 }
