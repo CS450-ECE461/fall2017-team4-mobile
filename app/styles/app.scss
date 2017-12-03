@@ -3,10 +3,11 @@
 @import "sign-in";
 @import "sign-up";
 @import "ember-power-select";
-@import "mdl-route__chat";
+@import "chat";
 @import "components/conversation-entry";
 @import "components/search-bar";
 @import "components/top-header";
+@import "components/tethered-box";
 @import "profile";
 @import "search";
 
@@ -17,19 +18,21 @@ nav.application {
   width: 100%;
   position: fixed;
   bottom: 0;
-  z-index:20;
+  z-index: 20;
 
-  div, .nav-button{
+  div, .nav-button {
     div {
       border: none;
     }
+
     img {
-      height: 27px;
-      width: 27px;
+      height: 22px;
+      margin-bottom: 3px;
     }
+
     width: 25%;
     height: $nav-bar-height;
-    background: red;
+    background: $waldo-red;
     border: white;
     display: flex;
     flex-direction: column;
@@ -40,6 +43,9 @@ nav.application {
     border-width: 1px;
     color: white;
     justify-content: center;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 100;
   }
 }
 

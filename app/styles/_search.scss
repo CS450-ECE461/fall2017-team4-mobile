@@ -60,18 +60,20 @@ height: 10%;
 position: absolute;
 width: 100%;
 overflow:visible;
-bottom:50px;
+bottom:10%;
 }
 
 #recommended-jobs-title {
   text-align: center;
   font-size:24px;
-  font-family: "Montserrat semibold"
+  font-family: "Montserrat semibold";
+  content-justify:center;
 }
 
 #recommended-jobs-header img {
 margin-left: 42%;
 marigin-top: 5%;
+content-justify:center;
 }
 
 
@@ -82,7 +84,7 @@ border-top: 1px solid grey;
 height:auto;
 border-radius: 0;
 color:black;
-bottom:50px;
+bottom:10%;
 
 
 }

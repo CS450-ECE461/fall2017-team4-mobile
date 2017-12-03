@@ -2,45 +2,51 @@
 
 .mdl-route__profile {
 
-
-  .div-upper-blue{
+  .div-upper-blue {
     background-color: $waldo-blue;
     width: 100%;
-    height:28%;
+    height: 25%;
     position: fixed;
     top: 0;
-    z-index:5;
+    z-index: 5;
   }
 
   header {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: $waldo-blue;
     position: fixed;
-    z-index:20;
-    height:20%;
-    width:90%;
-    margin-left:5%
+    z-index: 20;
+    height: 20%;
+    width: 100%;
   }
 
-  .div-toolbar{
-    width:100%;
+  .div-toolbar {
+    width: 90%;
     display: inline;
-    text-align:center;
-    color:white;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .edit-button {
-    float:left;
+    float: left;
+    height: 25px;
   }
 
-  .profile-title{
+  .profile-title {
+    font-weight: 600;
+    font-size: 18px;
   }
 
   .settings-button {
-    float:right;
+    float: right;
+    height: 25px;
   }
-
-
-
 
   .div-outer-white {
     background-color:white;
@@ -50,67 +56,72 @@
 
   .div-inner-grey {
       background-color: #CDCDCD;
-      width:100%;
+      width: 100%;
       position: absolute;
   }
 
-  .div-content{
-    position:relative;
-    width:90%;
-    margin-left:5%;
-    z-index:10;
-    margin-top:60%;
-    margin-bottom:30%;
+  .div-content {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    z-index: 10;
+    margin-top: 60%;
+    margin-bottom: 30%;
   }
 
   .profile-top{
-    background-color:white;
-    text-align:center;
-    height:100px;
-    margin-top:-20%;
+    background-color: white;
+    text-align: center;
+    height: 100px;
+    margin-top: -20%;
   }
 
   .profile-top img {
-    overflow:visible;
-    margin-top:-20%;
-    width:100px;
-    height:100px;
+    overflow: visible;
+    margin-top: -20%;
+    width: 100px;
+    height: 100px;
     border: 2px;
     border-color: white;
   }
 
   .profile-top h1 {
-    margin-bottom:-10px;
+    margin-bottom: -10px;
   }
 
+  .profile-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+  }
 
   .portfolio-button {
     background-color: $waldo-blue;
-    height:50px;
-    width:48%;
-    cursor:pointer;
-    color:white;
-    margin-left:1%;
+    height: 50px;
+    width: 49%;
+    cursor: pointer;
+    color: white;
     font-size: 10px;
-    display:inline;
+    display: inline;
+    border-radius: 0px;
   }
 
   .resume-button {
     background-color: $waldo-blue;
-    height:50px;
-    width:48%;
-    cursor:pointer;
-    color:white;
-    margin-left:1%;
+    height: 50px;
+    width: 49%;
+    cursor: pointer;
+    color: white;
     font-size: 10px;
-    display:inline;
+    display: inline;
+    border-radius: 0px;
   }
 
   .portfolio-button:hover .resume-button:hover {
      background-color: $waldo-blue;
-     color:grey;
+     color: grey;
   }
-
 
   .div-experience-list {
     padding: 0px 20px;
@@ -123,49 +134,45 @@
     background-color: white;
   }
 
-/* profile-list css begin*/
+  /* profile-list css begin*/
   .list {
-     font-size:10px;
-     background-color:white;
-
+     font-size: 10px;
+     background-color: white;
   }
 
   .list img {
     float: left;
-    clear:none;
-    width:45px;
-    height:45px;
-    margin-right:10px
+    clear: none;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px
   }
 
-  .job-name{
-    display:inline-block;
+  .job-name {
+    display: inline-block;
   }
 
-  .date-range{
-    margin-left:20%;
-    display:inline;
+  .date-range {
+    margin-left: 20%;
+    display: inline;
   }
 
   .company {
-    margin-top:-20px;
-    display:inline-block;
+    margin-top: -20px;
+    display: inline-block;
   }
 
   .location {
-    display:inline-block;
-    margin-left:20%;
+    display: inline-block;
+    margin-left: 20%;
   }
 
   .see-more-button {
-    display:inline;
-    margin-left:25%;
+    display: inline;
+    margin-left: 25%;
   }
 
   .company .location .see-more-button {
-    margin-top:-20px;
+    margin-top: -20px;
   }
-
-
-
 }
