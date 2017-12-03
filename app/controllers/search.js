@@ -12,11 +12,13 @@ export default Controller.extend({
           Ember.$('#recommended-jobs-header').animate({bottom: '10%'}, 'fast');
           Ember.$("#recommended-jobs-body").removeClass('hide').addClass('show');
           Ember.$("#recommended-jobs-title").text("Our Top Picks for You. ");
+            Ember.$("#recommended-jobs-open-close").attr("src", "https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/icons/ctaUp.png");
       }
       else {
-          Ember.$('#recommended-jobs-header').animate({bottom: '110%'}, 'fast');
+          Ember.$('#recommended-jobs-header').animate({bottom: '95%'}, 'fast');
           Ember.$("#recommended-jobs-body").removeClass('show').addClass('hide');
           Ember.$("#recommended-jobs-title").text("Not So Lucky?");
+          Ember.$("#recommended-jobs-open-close").attr("src", "https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/icons/ctaDown.png");
       }
 
     }

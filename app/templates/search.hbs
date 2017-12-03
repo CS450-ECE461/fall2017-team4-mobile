@@ -10,12 +10,12 @@
 <div class="div-search-bar">
 {{search-bar
   placeholder="Search For Jobs"
-  image="https://png.icons8.com/search-filled/ios7/39/00B5AF"
+  image="https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/icons/waldoSearch.png"
 }}
 </div>
 <div id="recommended-jobs-header">
    <h3 id="recommended-jobs-title"> Our Top Picks for You. </h3>
-    <div {{action "showRecommendedJobSlider"}}><img src="https://png.icons8.com/back-to/color/50/e74c3c"></div>
+    <div id="div-white-bar"{{action "showRecommendedJobSlider"}}><img id="recommended-jobs-open-close" src={{icon-asset "ctaUp.png"}}></div>
     <div id="recommended-jobs-body" class="show">
         {{#each model as |user|}}
 
