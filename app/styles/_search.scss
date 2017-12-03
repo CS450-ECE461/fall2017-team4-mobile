@@ -1,0 +1,92 @@
+@import "app-variables";
+
+.mdl-route__search {
+
+#bg {
+position: fixed;
+top: -50%;
+left: -50%;
+width: 200%;
+height: 200%;
+}
+#bg img {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+min-width: 50%;
+min-height: 50%;
+}
+
+
+.wrapper {
+position: absolute;
+width: 100%;
+bottom:50px;
+clear: both;
+float: none;
+height: 500px;
+
+}
+
+.search-page-logo {
+width:189px;
+height:132px;
+margin-left:25%;
+}
+
+.search-page-slogan {
+font-size: 24pt;
+color:#fff;
+text-align: center;
+margin-top:5%;
+font-family: "Montserrat semibold"
+}
+
+
+.div-search-bar {
+margin-left:10%;
+margin-top:5%;
+width:90%
+}
+
+
+
+#recommended-jobs-header {
+color: #fff;
+height: 70px;
+position: absolute;
+width: 100%;
+overflow:visible;
+bottom:50px;
+}
+
+#recommended-jobs-title {
+  text-align: center;
+  font-size:24px;
+  font-family: "Montserrat semibold"
+}
+
+#recommended-jobs-header img {
+margin-left: 42%;
+marigin-top: 5%;
+}
+
+
+#recommended-jobs-body {
+background: #FFF none repeat scroll 0 0;
+display: none;
+border-top: 1px solid grey;
+height:auto;
+border-radius: 0;
+color:black;
+bottom:50px;
+
+
+}
+
+
+
+}

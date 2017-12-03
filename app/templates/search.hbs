@@ -1,2 +1,40 @@
-Search Page
-{{outlet}}
+
+<div id="bg">
+  <img src="{{image-asset "welcomeBG3.jpg"}}"/>
+</div>
+<div class="wrapper">
+<img class="search-page-logo" src="{{image-asset "waldo_logoColor.png"}}"/>
+
+<h3 class="search-page-slogan"> Let's find the job you've been looking for. </h3>
+
+<div class="div-search-bar">
+{{search-bar
+  placeholder="Search For Jobs"
+  image="https://png.icons8.com/search-filled/ios7/39/00B5AF"
+}}
+</div>
+<div id="recommended-jobs-header">
+   <h3 id="recommended-jobs-title"> Our Top Picks for You. </h3>
+    <div {{action "showRecommendedJobSlider"}}><img src="https://png.icons8.com/back-to/color/50/e74c3c"></div>
+    <div id="recommended-jobs-body" class="show">
+        {{#each model as |user|}}
+
+        <div class="list">
+          <img src="https://avatars0.githubusercontent.com/ml/4?s=120&v=4">
+          <h3> Test Job Name</h3>
+
+          <p> Test </p>
+
+          <p> Test </p>
+
+          <br/>
+
+          <p> Test </p>
+
+          <button type="submit" class="see-more-button">Test</button>
+         </div>
+         <hr>
+        {{/each}}
+    </div>
+</div>
+</div>
