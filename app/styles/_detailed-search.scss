@@ -57,4 +57,28 @@
       border-left-style: solid;
     }
   }
+
+  .search-lists {
+    position: fixed;
+    margin-top: 205px;
+    width: 100%;
+
+    .job-search-filter {
+      display: flex;
+      flex-direction: row;
+
+      img.search-icon {
+        height: 50px;
+        background-color: $waldo-red;
+        padding: 20px 10px;
+        margin: 20px;
+      }
+
+      .search-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
 }
