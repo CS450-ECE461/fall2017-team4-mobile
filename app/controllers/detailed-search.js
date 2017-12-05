@@ -3,8 +3,8 @@ import Ember from "ember";
 
 export default Controller.extend({
   appController: Ember.inject.controller('application'),
-  resultsController: Ember.inject.controller('detailed-routes.search-results'),
-  searchesController: Ember.inject.controller('detailed-routes.searches'),
+  resultsController: Ember.inject.controller('detailed-search.search-results'),
+  searchesController: Ember.inject.controller('detailed-search.searches'),
 
   searchBarText: "Job title or company",
   searchValue: '',
