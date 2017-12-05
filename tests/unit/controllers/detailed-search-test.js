@@ -6,7 +6,7 @@ moduleFor('controller:detailed-search', 'Unit | Controller | detailed search', {
   needs: [
     'controller:application',
     'controller:detailed-search.search-results',
-    'controller:chat.detailed-search.searches'
+    'controller:detailed-search.searches'
   ]
 });
 
