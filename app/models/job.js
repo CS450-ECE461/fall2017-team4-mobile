@@ -1,8 +1,8 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  logo: DS.attr(),
-  name: DS.attr(),
+  company: DS.belongsTo(),
+  title: DS.attr(),
   employees: DS.hasMany(),
   location: DS.attr(),
   description: DS.attr(),
