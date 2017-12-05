@@ -6,7 +6,7 @@
       <span class="small">{{job.company.name}}</span>
       <span class="small">{{job.location}}</span>
     </div>
-    <span class="view-job">View Job Description</span>
+    <span class="view-job" {{action 'viewCompanyDetails' job.id}}>View Job Description</span>
   </div>
 </div>
 <div class="job-right">
