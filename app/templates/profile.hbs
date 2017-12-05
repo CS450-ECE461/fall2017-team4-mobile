@@ -7,7 +7,7 @@
     <div class="div-toolbar">
       <img class="edit-button image-hover-highlight" src={{icon-asset "editProfile.png"}}>
       <span class="profile-title">Profile</span>
-      <img class="settings-button image-hover-highlight" {{action 'signOut'}} src={{icon-asset "profileSettings.png"}}>
+      <a {{action 'signOut'}}><img class="settings-button image-hover-highlight"src={{icon-asset "profileSettings.png"}}></a>
     </div>
         {{search-bar
           placeholder="Search"
@@ -21,7 +21,7 @@
     <div class="div-content">
 
       <div class="profile-top">
-        <img src="https://avatars0.githubusercontent.com/ml/4?s=120&v=4">
+        <img src={{image-asset "waldo_user1.jpg"}}/>
         <strong><h1> Courtney Smith </h1></strong>
         <h2> Visual Designer & Photographer </h2>
         </div>
@@ -38,7 +38,7 @@
           {{profile-list
             imageSrc='https://avatars0.githubusercontent.com/ml/4?s=120&v=4'
             jobName='Graphical Design Intern'
-            dateRange='2013 - 2015'
+            dateRange='May 2016 - Present'
             companyName='IUPUI'
             location='Indianapolis, IN'
             buttonText='...see more' }}
@@ -68,24 +68,38 @@
       <h3> Skills </h3>
 
       <div class="div-slick-slider">
-      {{#slick-slider autoplay=false arrows=true}}
-      <div class="box">
-        <button class="skill-item">Web Design</button>
-        <button class="skill-item">Print Design</button>
-        <button class="skill-item">Typography</button>
-        <button class="skill-item">Mobile Developer</button>
-      </div>
-      <div class="box">
-        <button class="skill-item">Communication</button>
-        <button class="skill-item">Management</button>
-        <button class="skill-item">Author</button>
-        <button class="skill-item">Neuroscientist</button>
-      </div>
-      {{/slick-slider}}
-      <br/>
-      <br/>
+        {{#slick-slider autoplay=false arrows=true}}
+          <div class="box">
+            <button class="skill-item">Web Design</button>
+            <button class="skill-item">Print Design</button>
+            <button class="skill-item">Typography</button>
+            <button class="skill-item">Mobile Developer</button>
+          </div>
+          <div class="box">
+            <button class="skill-item">Communication</button>
+            <button class="skill-item">Management</button>
+            <button class="skill-item">Author</button>
+            <button class="skill-item">Neuroscientist</button>
+          </div>
+        {{/slick-slider}}
+        <br/>
+        <br/>
     </div>
-  </div>
+
+
+   </div>
+
+   <div class="div-contact">
+     <h3> Contact </h3>
+     <div>
+       <img class="contact-chat image-hover-highlight" src={{icon-asset "waldoChat.png"}}>
+       <img class="contact-call image-hover-highlight" src={{icon-asset "waldoCall.png"}}>
+       <img class="contact-facetime image-hover-highlight" src={{icon-asset "waldoFacetime.png"}}>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+   </div>
 
 
     </div>
