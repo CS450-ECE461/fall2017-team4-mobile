@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('controller:detailed-routes/search-results', 'Unit | Controller | detailed routes/search results', {
+moduleFor('controller:detailed-search/search-results', 'Unit | Controller | detailed search/search results', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
