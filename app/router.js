@@ -24,6 +24,7 @@ Router.map(function() {
     this.route('search-results');
   });
   this.route('detailed-routes', function() {});
+  this.route('welcome');
 });
 
 export default Router;
