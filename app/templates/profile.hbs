@@ -5,9 +5,9 @@
 
   <header>
     <div class="div-toolbar">
-      <img class="edit-button" src={{icon-asset "editProfile.png"}}>
+      <img class="edit-button image-hover-highlight" src={{icon-asset "editProfile.png"}}>
       <span class="profile-title">Profile</span>
-      <img class="settings-button" src={{icon-asset "profileSettings.png"}}>
+      <img class="settings-button image-hover-highlight" {{action 'signOut'}} src={{icon-asset "profileSettings.png"}}>
     </div>
         {{search-bar
           placeholder="Search"
@@ -63,6 +63,29 @@
 
         {{/each}}
       </div>
+
+    <div class="div-skills-list">
+      <h3> Skills </h3>
+
+      <div class="div-slick-slider">
+      {{#slick-slider autoplay=false arrows=true}}
+      <div class="box">
+        <button class="skill-item">Web Design</button>
+        <button class="skill-item">Print Design</button>
+        <button class="skill-item">Typography</button>
+        <button class="skill-item">Mobile Developer</button>
+      </div>
+      <div class="box">
+        <button class="skill-item">Communication</button>
+        <button class="skill-item">Management</button>
+        <button class="skill-item">Author</button>
+        <button class="skill-item">Neuroscientist</button>
+      </div>
+      {{/slick-slider}}
+      <br/>
+      <br/>
+    </div>
+  </div>
 
 
     </div>

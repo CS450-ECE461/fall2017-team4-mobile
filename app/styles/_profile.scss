@@ -2,6 +2,15 @@
 
 .mdl-route__profile {
 
+  .image-hover-highlight {
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s;
+    &:hover {
+      height:35px;
+      transition: all 0.50s;
+    }
+}
+
   .div-upper-blue {
     background-color: $waldo-blue;
     width: 100%;
@@ -134,7 +143,7 @@
     background-color: white;
   }
 
-  /* profile-list css begin*/
+  /* profile-list css begin */
   .list {
      font-size: 10px;
      background-color: white;
@@ -175,4 +184,68 @@
   .company .location .see-more-button {
     margin-top: -20px;
   }
+
+  /* profile-list-css end */
+
+
+  .div-skills-list {
+    padding: 0px 20px;
+    margin-top: -10px;
+    background-color: white;
+    height:20%;
+  }
+
+  .div-skills-list h3 {
+    margin-bottom:1%;
+  }
+
+  .slick-prev:before{
+    background-image: url(https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/icons/controlBack.png);
+    background-size: 15px 40px;
+    display: inline-block;
+    width: 15px;
+    height: 40px;
+    content:"";
+  }
+
+  .slick-prev{
+    margin-left:4%;
+    margin-top:-4%;
+  }
+
+
+  .slick-next:before{
+    background-image: url(https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/icons/controlForward.png);
+    background-size: 15px 40px;
+    display: inline-block;
+    width: 15px;
+    height: 40px;
+    content:"";
+  }
+
+  .slick-next {
+    margin-right:4%;
+    margin-top:-4%;
+  }
+
+  .div-slick-slider {
+    text-align:center;
+  }
+
+  .box {
+    display:inline-block;
+  }
+
+  .skill-item{
+    background-color: $waldo-blue;
+    height: 40px;
+    width: 125px;;
+    font-size:10px;
+    color: white;
+    display: inline-block;
+    border-radius: 0px;
+    margin: 1% 1% 1% 1%;
+  }
+
+
 }
