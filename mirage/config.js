@@ -67,8 +67,7 @@ export default function() {
     }
   );
 
-  this.get('/jobs', (schema,req) => {
-    return {
+  this.get('/jobs', {
       data: [
         {
           type: "job",
@@ -115,7 +114,6 @@ export default function() {
           }
         }
       ]
-    }
   });
 
   this.passthrough('http://165.227.76.52:5000/**');

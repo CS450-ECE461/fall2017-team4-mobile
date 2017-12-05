@@ -11,14 +11,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{job-entry}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#job-entry}}
-      template block text
-    {{/job-entry}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().replace(/\n/g, "").replace(/ /g, ""), "ViewJobDescription10h")
 });
