@@ -1,17 +1,26 @@
 <div class="list">
   <img src={{imageSrc}}>
 
-  <h3 class="job-name"> {{jobName}} </h3>
+<div class=profile-list-content>
 
-  <p class="date-range"> {{dateRange}} </p>
+  <div class="profile-list-first-column">
+    <h3 class="job-name"> {{jobName}} </h3>
+    <p class="company"> {{companyName}} </p>
+    <p class="location"> {{location}} </p>
+  </div>
 
-  <p class="company"> {{companyName}} </p>
+  <div class="profile-list-second-column">
+    <p class="date-range"> {{dateRange}} </p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <button type="submit" class="see-more-button" {{action 'seeMore'}}>{{buttonText}}</button>
+  </div>
 
-  <br/>
+</div>
 
-  <p class="location"> {{location}} </p>
 
-  <button type="submit" class="see-more-button" {{action 'seeMore'}}>{{buttonText}}</button>
 </div>
 
 {{yield}}
