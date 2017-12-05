@@ -27,7 +27,7 @@ export default function() {
   this.get('/chats', {
       data: [
         {
-          type:"chat",
+          type:"conversation",
           id: "1",
           relationships: {
             messages: {
@@ -45,7 +45,7 @@ export default function() {
           }
         },
         {
-          type:"chat",
+          type:"conversation",
           id: "2",
           relationships: {
             messages: {
@@ -66,9 +66,9 @@ export default function() {
     }
   );
 
-  // this.post('/users', (schema,req) => {
-  //   console.log(req);
-  // });
+  this.get('/users/:id', (schema,req) => {
+    return schema.users.find("1");
+  });
 
   this.passthrough('http://165.227.76.52:5000/**');
 }

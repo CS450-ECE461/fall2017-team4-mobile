@@ -19,12 +19,15 @@ export default Controller.extend({
     },
 
     startConversation() {
-      let convo = this.get('store').createRecord('chat',
-        {
-            user: this.get('gatekeeper.currentUser.id'),
-            employee: "employee2"
-        });
-        convo.save()
+      this.get('store').findRecord('user', this.get('gatekeeper.currentUser.id'))
+        .then(user_ => {
+          this.get('store').findRecord('employee', 1).then(employee_ => {
+            this.get('store').createRecord('conversation',{
+                  user: user_,
+                  employee: employee_
+              }).save()
+          })
+        })
     }
   }
 });

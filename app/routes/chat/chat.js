@@ -8,7 +8,7 @@ export default Route.extend({
   //TODO: Make the userId be the actual current user
   model() {
     let combined = [];
-    return this.get('store').query('chat', {userId: "1"}).then(conversations => {
+    return this.get('store').query('conversation', {userId: "1"}).then(conversations => {
       conversations.forEach(conversation => {
         let firstMessageId = conversation.hasMany('messages').ids()[0];
         this.get('store').findRecord('message', firstMessageId).then(message => {
