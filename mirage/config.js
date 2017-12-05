@@ -28,7 +28,7 @@ export default function() {
   this.get('/chats', {
       data: [
         {
-          type:"conversation",
+          type:"chat",
           id: "1",
           relationships: {
             messages: {
@@ -46,7 +46,7 @@ export default function() {
           }
         },
         {
-          type:"conversation",
+          type:"chat",
           id: "2",
           relationships: {
             messages: {
