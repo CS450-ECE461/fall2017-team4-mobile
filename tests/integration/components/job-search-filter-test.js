@@ -11,7 +11,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{job-search-filter}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().trim(), 'Open Search');
 
   // Template block usage:
   this.render(hbs`
