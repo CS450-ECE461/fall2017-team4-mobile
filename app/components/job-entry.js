@@ -12,8 +12,12 @@ export default Component.extend({
       this.toggleProperty('itemSaved')
     },
 
-    viewCompanyDetails(jobId) {
+    viewJobDetails() {
       this.get('router').transitionTo('job-detail', this.get('job'));
+    },
+
+    viewCompanyDetails() {
+      this.get('router').transitionTo('company-detail', this.get('job.company'));
     }
   }
 });
