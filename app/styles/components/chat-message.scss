@@ -1,0 +1,24 @@
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding: 5px;
+  .message-body {
+    background-color: red;
+    padding-left: 17px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    .message-text {
+
+    }
+  }
+
+  .timestamp-div {
+    display: flex;
+    justify-content: flex-end;
+    .timestamp {
+
+    }
+  }
+
+}

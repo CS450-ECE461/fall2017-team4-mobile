@@ -75,6 +75,7 @@ export default function() {
         attributes: {
           body: "Hey! I'm interested in this job!!!",
           fromId: "5a277651ae959a0001f576e2",
+          timestamp: "2017-12-06T06:56:54.542Z"
         }
       },
       {
@@ -83,6 +84,7 @@ export default function() {
         attributes: {
           body: "OK!!! What exactly do you want to know",
           fromId: "1",
+          timestamp: "2017-12-06T06:56:54.542Z"
         }
       },
       {
@@ -91,6 +93,7 @@ export default function() {
         attributes: {
           body: "I would like to know why it only pays $200,000. This seems very unreasonable. Am I wrong? AM I wrong? AM I WRONG?!?!",
           fromId: "5a277651ae959a0001f576e2",
+          timestamp: "2017-12-06T06:56:54.542Z"
         }
       },
       {
@@ -99,6 +102,7 @@ export default function() {
         attributes: {
           body: "!!!",
           fromId: "5a277651ae959a0001f576e2",
+          timestamp: "2017-12-06T06:56:54.542Z"
         }
       },
       {
@@ -107,6 +111,7 @@ export default function() {
         attributes: {
           body: "Good bye mean sir",
           fromId: "1",
+          timestamp: "2017-12-06T06:56:54.542Z"
         }
       }
     ]
@@ -175,5 +180,14 @@ export default function() {
     }
   })
 
+  this.get('jobs/:id/employees', {
+    data: [{
+      id: "124",
+      type: "employee",
+      attributes: {
+        name: "Bill Murphy"
+      }
+    }]
+  })
   this.passthrough('http://165.227.76.52:5000/**');
 }

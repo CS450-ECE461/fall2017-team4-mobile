@@ -13,7 +13,7 @@ export default Controller.extend({
     },
 
     backAction() {
-      console.log("Going Back");
+      this.transitionToRoute('chat')
     },
 
     profileAction() {

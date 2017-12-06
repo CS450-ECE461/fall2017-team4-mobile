@@ -10,19 +10,20 @@
   target="#conversation-header"
   attachment='middle middle'
   targetAttachment='bottom middle'}}
-  <span>Wassup</span>
+  <div class="employee-chat-image-div">
+    <img src="{{image-asset 'joshMH.jpg'}}" class="employee-chat-image"/>
+  </div>
 {{/liquid-tether}}
 
+<div class="messages-box">
+  {{#each model.messages as |message|}}
+    {{chat-message message=message}}
+  {{/each}}
+</div>
 
-{{#link-to "chat"}}
-  <span>Back</span>
-{{/link-to}}
-
-{{#each model.messages as |message|}}
-  {{message.body}}
-{{/each}}
-
-{{input value=message}}
-<button {{action 'sendMessage'}}>Send Message</button>
+<div class="edit-box">
+  {{input value=message}}
+  <button {{action 'sendMessage'}}>Send Message</button>
+</div>
 
 {{outlet}}
