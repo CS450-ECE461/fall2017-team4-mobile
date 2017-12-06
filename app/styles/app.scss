@@ -4,6 +4,7 @@
 @import "sign-up";
 @import "ember-power-select";
 @import "chat";
+@import "detailed-search";
 @import "components/conversation-entry";
 @import "components/search-bar";
 @import "components/top-header";
@@ -14,6 +15,7 @@
 @import "welcome";
 
 nav.application {
+  font-family: $waldo-font;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,8 +30,8 @@ nav.application {
     }
 
     img {
-      height: 22px;
-      margin-bottom: 3px;
+      height: 20px;
+      margin-bottom: 5px;
     }
 
     width: 25%;
@@ -45,7 +47,7 @@ nav.application {
     border-width: 1px;
     color: white;
     justify-content: center;
-    font-size: 10px;
+    font-size: 9px;
     text-decoration: none;
     font-weight: 100;
   }

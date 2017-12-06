@@ -16,6 +16,10 @@ export default function() {
     return schema.states.all();
   });
 
+  this.get('/searches', (schema) => {
+    return schema.searches.all();
+  });
+
   this.get('/employees/:id', (schema, request) => {
     return schema.employees.find(request.params.id);
   });

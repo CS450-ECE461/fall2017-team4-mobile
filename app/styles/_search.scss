@@ -1,116 +1,102 @@
-@import "app-variables";
-
 .mdl-route__search {
 
-#bg {
-position: fixed;
-top: -50%;
-left: -50%;
-width: 200%;
-height: 200%;
-}
-#bg img {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
-min-width: 50%;
-min-height: 50%;
-}
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
 
+    img {
+      height: 80%;
+      display: block;
+      margin-left: -10%;
+      margin-top: 10%;
+    }
+  }
 
-.wrapper {
-position: absolute;
-width: 100%;
-bottom:0%;
-clear: both;
-float: none;
-height:80%;
+  .wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    clear: both;
+    float: none;
+    height: 80%;
+  }
 
-}
+  .search-page-logo {
+    display: block;
+    width: 189px;
+    height: 132px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.search-page-logo {
-width:189px;
-height:132px;
-margin-left:25%;
-}
+  .search-page-slogan {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 5%;
+    font-family: $waldo-font;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: 700;
+  }
 
-.search-page-slogan {
-font-size: 24pt;
-color:#fff;
-text-align: center;
-margin-top:5%;
-font-family: "Montserrat semibold"
-}
+  .div-search-bar {
+    margin-left: 10%;
+    margin-top: 2%;
+    height: 43px;
+  }
 
+  .search-image {
+    background-color: $waldo-red;
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    padding-bottom: 8px;
+  }
 
-.div-search-bar {
-margin-left:10%;
-margin-top:5%;
-height:43px;
-}
+  #recommended-jobs-header {
+    color: #FFFFFF;
+    height: 20%;
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+  }
 
-.search-image{
-  background-color: $waldo-red;
-  width:40px;
-  height:40px;
-  align:middle;
-}
+  #recommended-jobs-title {
+    text-align: center;
+    font-size: 20px;
+    font-family: $waldo-font;
+    overflow: visible;
+    margin-top: -5%;
+    margin-left: 2.5%;
+    font-weight: 700;
+  }
 
+  #recommended-jobs-open-close {
+    margin-left: 44%;
+    width: 46px;
+    height: 46px;
+    overflow: visible;
+    margin-top: -7%;
+  }
 
+  #div-white-bar {
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    border-top: 1px solid grey;
+    margin-top: 12%;
+  }
 
-
-#recommended-jobs-header {
-color: #fff;
-height: 20%;
-position: absolute;
-width: 100%;
-bottom:10%;
-}
-
-
-
-
-#recommended-jobs-title {
-text-align: center;
-font-size:24px;
-font-family: "Montserrat semibold";
-overflow:visible;
-margin-top:-5%;
-margin-left:2.5%;
-}
-
-
-#recommended-jobs-open-close{
-margin-left:44%;
-width:46px;
-height:46px;
-overflow:visible;
-margin-top:-7%;
-}
-
-#div-white-bar{
-  background-color:white;
-  width:100%;
-  height:100%;
-  border-top: 1px solid grey;
-  margin-top:12%;
-}
-
-
-#recommended-jobs-body {
-background: #FFF none repeat scroll 0 0;
-display: none;
-height:10000000vh;
-border-radius: 0;
-color:black;
-bottom:10%;
-
-
-}
-
-
-
+  #recommended-jobs-body {
+    background: #FFF none repeat scroll 0 0;
+    display: none;
+    height: auto;
+    border-radius: 0;
+    color: black;
+    bottom: 10%;
+  }
 }
