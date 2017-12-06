@@ -171,4 +171,45 @@
       }
     }
   }
+
+  .search-result-list {
+    margin-top: 205px;
+  }
+
+  .search-list-add-button {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    margin-top: -45px;
+    background-color: black;
+    height: 45px;
+    width: 100%;
+
+    button {
+      height: 100%;
+      font-family: $waldo-font;
+      color: white;
+      width: 50%;
+      text-align: center;
+      border-radius: 0px;
+      font-weight: 600;
+    }
+
+    #save-search-area {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: fit-content;
+      margin-right: auto;
+      margin-left: auto;
+
+      img {
+        width: 35px;
+      }
+
+      .add-search-button {
+        width: 100%;
+      }
+    }
+  }
 }
