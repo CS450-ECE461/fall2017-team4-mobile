@@ -2,7 +2,7 @@ import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('adapter:message', 'Unit | Adapter | message', {
   // Specify the other units that are required for this test.
-  // needs: ['serializer:foo']
+  needs: ['service:gatekeeper']
 });
 
 // Replace this with your real tests.

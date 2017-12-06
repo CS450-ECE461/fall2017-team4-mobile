@@ -1,4 +1,5 @@
 import Controller from '@ember/controller';
+import Ember from 'ember';
 
 export default Controller.extend({
   router: Ember.inject.service(),
@@ -20,7 +21,7 @@ export default Controller.extend({
     },
 
     profileAction() {
-      console.log("See Profile")
+      Ember.Logger.log("See Profile")
     }
   }
 });

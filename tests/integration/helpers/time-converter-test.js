@@ -12,6 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{time-converter inputValue}}`);
 
-  assert.equal(this.$().text().trim(), '1234');
+  assert.equal(this.$().text().trim(), 'Sat, Dec 31, 1233');
 });
-

@@ -4,7 +4,6 @@ export default Controller.extend({
 
   actions: {
     startConversation(employee_) {
-      console.log(employee_)
         this.get('store').findRecord('user', this.get('gatekeeper.currentUser.id'))
           .then(user_ => {
               this.get('store').createRecord('chat',{

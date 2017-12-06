@@ -7,7 +7,6 @@ export default Route.extend({
    */
   //TODO: Make the userId be the actual current user
   model() {
-    let combined = [];
     return this.get('store').query('chat', {userId: this.get('gatekeeper.currentUser.id')})
   }
 });
