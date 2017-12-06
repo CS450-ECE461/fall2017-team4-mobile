@@ -19,6 +19,9 @@ Router.map(function() {
   });
   this.route('notifications');
   this.route('conversation', {path: 'conversation/:id'});
+  this.route('welcome');
+  this.route('job-detail', {path: 'job-detail/:id'});
+  this.route('company-detail', {path: 'company-detail/:id'});
 });
 
 export default Router;
