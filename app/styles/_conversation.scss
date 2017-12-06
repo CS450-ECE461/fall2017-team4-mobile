@@ -8,11 +8,11 @@
     background: $waldo-yellow;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     width: 100%;
     position: fixed;
     .top-header {
-      padding-top: 26px;
+      // padding-top: 26px;
     }
   }
   .messages-box {
