@@ -1,2 +1,7 @@
-Job Id: {{model.id}}
+Job Id: {{model.job.id}}
+
+{{#each model.employees as |employee|}}
+  <span {{action 'startConversation' employee}}>{{employee.name}}</span>
+{{/each}}
+
 {{outlet}}

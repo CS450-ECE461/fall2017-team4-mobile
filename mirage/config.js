@@ -116,5 +116,19 @@ export default function() {
       ]
   });
 
+  this.get('/jobs/:id', {
+    type: "job",
+    id: "1",
+    attributes: {
+      title: "Software Developer",
+      location: "Indianapolis, IN"
+    },
+    relationships: {
+      company: {
+        data: {type: "company", id: "1"}
+      }
+    }
+  })
+  
   this.passthrough('http://165.227.76.52:5000/**');
 }
