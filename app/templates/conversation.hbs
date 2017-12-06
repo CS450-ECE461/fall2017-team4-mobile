@@ -2,6 +2,11 @@
   <span>Back</span>
 {{/link-to}}
 
-Entire Conversation String
+{{#each model.messages as |message|}}
+  {{message.body}}
+{{/each}}
+
+{{input value=message}}
+<button {{action 'sendMessage'}}>Send Message</button>
 
 {{outlet}}
