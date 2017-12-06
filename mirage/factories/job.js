@@ -11,5 +11,7 @@ export default Factory.extend({
 
   location() {
     return (faker.address.city() + ", " + faker.address.state());
-  }
+  },
+
+  
 });
