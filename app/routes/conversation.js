@@ -6,5 +6,10 @@ export default Gatekeeper.User.AuthenticatedRoute.extend({
       conversationId: params.id ,
       messages: this.get('store').query('chat', {id: params.id })
     })
+  },
+
+  setupController(controller, model) {
+    this._super(controller, model);
+    controller.set('blah', model.conversationId);
   }
 });

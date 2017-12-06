@@ -4,8 +4,14 @@
 </div>
 
 <div class="timestamp-div">
-  <span class="timestamp">{{time-converter message.timestamp}}</span>
+  <span class="timestamp" id={{concat elementId "timestamp"}}>{{time-converter message.timestamp}}</span>
 </div>
 
-{{!-- {{#liquid-tether}}
-{{/liquid-tether}} --}}
+{{#liquid-tether
+  target=(concat "#" elementId "timestamp")
+  attachment="bottom middle"
+  targetAttachment="top middle"
+  offset='8px 0'
+}}
+  <div class="chat-message-triangle"></div>
+{{/liquid-tether}}

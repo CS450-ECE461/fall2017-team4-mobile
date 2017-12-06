@@ -67,55 +67,55 @@ export default function() {
     }
   );
 
-  this.get('/chats/:id', {
-    data: [
-      {
-        type: "message",
-        id: "4",
-        attributes: {
-          body: "Hey! I'm interested in this job!!!",
-          fromId: "5a277651ae959a0001f576e2",
-          timestamp: "2017-12-06T06:56:54.542Z"
-        }
-      },
-      {
-        type: "message",
-        id: "1",
-        attributes: {
-          body: "OK!!! What exactly do you want to know",
-          fromId: "1",
-          timestamp: "2017-12-06T06:56:54.542Z"
-        }
-      },
-      {
-        type: "message",
-        id: "2",
-        attributes: {
-          body: "I would like to know why it only pays $200,000. This seems very unreasonable. Am I wrong? AM I wrong? AM I WRONG?!?!",
-          fromId: "5a277651ae959a0001f576e2",
-          timestamp: "2017-12-06T06:56:54.542Z"
-        }
-      },
-      {
-        type: "message",
-        id: "3",
-        attributes: {
-          body: "!!!",
-          fromId: "5a277651ae959a0001f576e2",
-          timestamp: "2017-12-06T06:56:54.542Z"
-        }
-      },
-      {
-        type: "message",
-        id: "5",
-        attributes: {
-          body: "Good bye mean sir",
-          fromId: "1",
-          timestamp: "2017-12-06T06:56:54.542Z"
-        }
-      }
-    ]
-  })
+  // this.get('/chats/:id', {
+  //   data: [
+  //     {
+  //       type: "message",
+  //       id: "4",
+  //       attributes: {
+  //         body: "Hey! I'm interested in this job!!!",
+  //         fromId: "5a277651ae959a0001f576e2",
+  //         timestamp: "2017-12-06T06:56:54.542Z"
+  //       }
+  //     },
+  //     {
+  //       type: "message",
+  //       id: "1",
+  //       attributes: {
+  //         body: "OK!!! What exactly do you want to know",
+  //         fromId: "1",
+  //         timestamp: "2017-12-06T06:56:54.542Z"
+  //       }
+  //     },
+  //     {
+  //       type: "message",
+  //       id: "2",
+  //       attributes: {
+  //         body: "I would like to know why it only pays $200,000. This seems very unreasonable. Am I wrong? AM I wrong? AM I WRONG?!?!",
+  //         fromId: "5a277651ae959a0001f576e2",
+  //         timestamp: "2017-12-06T06:56:54.542Z"
+  //       }
+  //     },
+  //     {
+  //       type: "message",
+  //       id: "3",
+  //       attributes: {
+  //         body: "!!!",
+  //         fromId: "5a277651ae959a0001f576e2",
+  //         timestamp: "2017-12-06T06:56:54.542Z"
+  //       }
+  //     },
+  //     {
+  //       type: "message",
+  //       id: "5",
+  //       attributes: {
+  //         body: "Good bye mean sir",
+  //         fromId: "1",
+  //         timestamp: "2017-12-06T06:56:54.542Z"
+  //       }
+  //     }
+  //   ]
+  // })
 
   this.get('/jobs', {
       data: [
