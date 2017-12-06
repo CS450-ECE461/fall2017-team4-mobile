@@ -22,50 +22,63 @@
 
       <div class="profile-top">
         <img src={{image-asset "waldo_user1.jpg"}}/>
-        <strong><h1> Courtney Smith </h1></strong>
-        <h2> Visual Designer & Photographer </h2>
+        <strong><h1> Sherry Jones </h1></strong>
+        <h2>Freelance Graphics Designer</h2>
         </div>
 
         <div class="profile-buttons">
-        <button class="portfolio-button" {{action 'viewPortfolio'}}>PORTFOLIO</button>
-        <button class="resume-button" {{action 'viewResume'}}>RESUME</button>
+        <button class="portfolio-button" {{action 'viewPortfolio'}}> View Portfolio</button>
+        <button class="resume-button" {{action 'viewResume'}}>View Resume</button>
       </div>
 
       <div class="div-experience-list">
-        <h3> Experience </h3>
-          {{#each model as |experience|}}
+        <h2> Experience </h2>
 
           {{profile-list
-            imageSrc='https://avatars0.githubusercontent.com/ml/4?s=120&v=4'
+            imageSrc=(image-asset "highalpha-company.png")
             jobName='Graphical Design Intern'
-            dateRange='May 2016 - Present'
-            companyName='IUPUI'
-            location='Indianapolis, IN'
-            buttonText='...see more' }}
+            dateRange='Feb 2014 - Jan 2016'
+            companyName='High Alpha'
+            location='Indianapolis, IN'}}
 
           <hr>
 
-        {{/each}}
+          {{profile-list
+            imageSrc=(image-asset "spinweb.jpg")
+            jobName='Graphical Designer'
+            dateRange='Feb 2016 - May 2016'
+            companyName='Spinweb'
+            location='Seattle, IN'}}
+
+          <hr>
+
+          {{profile-list
+            imageSrc=(image-asset "coralroot.jpg")
+            jobName='Graphical Design Intern'
+            dateRange='Aug 2016 - Present'
+            companyName='Coral Root'
+            location='Indianapolis, IN'}}
+
+          <hr>
       </div>
 
       <div class="div-education-list">
-        <h3> Education </h3>
-        {{#each model as |experience|}}
+        <h2> Education </h2>
 
         {{profile-list
-          imageSrc='https://avatars0.githubusercontent.com/ml/4?s=120&v=4'
+          imageSrc=(image-asset "university4.png")
           jobName='Visual Communications'
-          dateRange='2013 - 2017'
+          dateRange='2011 - 2015'
           companyName='IUPUI'
-          location='Indianapolis, IN'
-          buttonText='...see more' }}
+          location='Indianapolis, IN' }}
+
+
         <hr>
 
-        {{/each}}
       </div>
 
     <div class="div-skills-list">
-      <h3> Skills </h3>
+      <h2> Skills </h2>
 
       <div class="div-slick-slider">
         {{#slick-slider autoplay=false arrows=true}}
@@ -90,7 +103,7 @@
    </div>
 
    <div class="div-contact">
-     <h3> Contact </h3>
+     <h2> Contact </h2>
      <div>
        <img class="contact-chat image-hover-highlight" src={{icon-asset "waldoChat.png"}}>
        <img class="contact-call image-hover-highlight" src={{icon-asset "waldoCall.png"}}>

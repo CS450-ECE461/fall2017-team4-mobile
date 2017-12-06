@@ -12,6 +12,10 @@ export default Controller.extend({
 
     onClickFilter() {
       Ember.Logger.log("I'm filtering!!")
+    },
+
+    onArrowClicked(conversation) {
+      this.transitionToRoute('conversation', conversation)
     }
   }
 });

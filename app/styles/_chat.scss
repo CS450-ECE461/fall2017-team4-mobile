@@ -11,7 +11,9 @@
     align-items: center;
     justify-content: space-evenly;
 
+
     nav {
+      text-decoration: none;
       width: 95%;
       display: flex;
       .nav-button {
@@ -19,6 +21,7 @@
         text-align: center;
         height: 20px;
         color: white;
+        text-decoration: none;
       }
       .nav-button.active {
         border-bottom-style: solid;
@@ -34,5 +37,12 @@
     position: absolute;
     width: 100%;
     overflow-y: scroll;
+
+    .edit-image {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      height: 50px;
+    }
   }
 }

@@ -1,0 +1,43 @@
+<div class="mdl-route__welcome">
+
+
+<div class="content">
+{{#slick-slider autoplay=true arrows=false dots=true autoplaySpeed=5000}}
+  <div class="box">
+     <div id="slider-image-one">
+         <div class="slider-content">
+            <img class="welcome-page-logo" src="{{image-asset "waldo_logoColor.png"}}"/>
+             <h2>Finding that dream job is tough, let us help you.</h2>
+        </div>
+     </div>
+  </div>
+  <div class="box">
+      <div id="slider-image-two">
+          <div class="slider-content">
+              <h3>Simplify the job search. </h3>
+              <h3>Connect with employers. </h3>
+              <h3>Present yourself smarter. </h3>
+          </div>
+      </div>
+  </div>
+  <div class="box">
+        <div id="slider-image-three">
+          <div class="slider-content">
+            <img class="welcome-page-logo" src="{{image-asset "waldo_logoColor.png"}}"/>
+              <h1>waldo.com</h1>
+          </div>
+        </div>
+  </div>
+{{/slick-slider}}
+
+{{#link-to "sign-up"}}
+<button class="button sign-up-button">Sign Up</button>
+{{/link-to}}
+{{#link-to "sign-in"}}
+<button class="button sign-in-button">Log In</button>
+{{/link-to}}
+</div>
+
+
+
+</div>

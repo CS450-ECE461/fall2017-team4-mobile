@@ -1,5 +1,4 @@
 import ENV from '../config/environment';
-import { faker} from 'ember-cli-mirage';
 
 export default function() {
   this.urlPrefix = `${ENV.APP.API}`;
@@ -19,16 +18,16 @@ export default function() {
 
   this.get('/employees/:id', (schema, request) => {
     return schema.employees.find(request.params.id);
-  })
+  });
 
   this.get('/messages/:id', (schema, request) => {
     return schema.messages.find(request.params.id);
-  })
+  });
 
-  this.get('/conversations', {
+  this.get('/chats', {
       data: [
         {
-          type:"conversation",
+          type:"chat",
           id: "1",
           relationships: {
             messages: {
@@ -46,7 +45,7 @@ export default function() {
           }
         },
         {
-          type:"conversation",
+          type:"chat",
           id: "2",
           relationships: {
             messages: {
@@ -123,7 +122,7 @@ export default function() {
           type: "job",
           id: "1",
           attributes: {
-            title: "Software Developer",
+            title: "Graphics Designer",
             location: "Indianapolis, IN"
           },
           relationships: {
@@ -136,8 +135,8 @@ export default function() {
           type: "job",
           id: "2",
           attributes: {
-            title: "Java Guru",
-            location: "San Fransisco, CA"
+            title: "Web Designer",
+            location: "Indianapolis, IN"
           },
           relationships: {
             company: {
@@ -152,7 +151,7 @@ export default function() {
           id: "1",
           attributes: {
             name: "Salesforce",
-            logo: faker.image.business()
+            logo: "https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/images/source/salesforce.jpg"
           }
         },
         {
@@ -160,7 +159,7 @@ export default function() {
           id: "2",
           attributes: {
             name: "Genesys",
-            logo: faker.image.business()
+            logo: "https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/images/source/genesys.png"
           }
         }
       ]

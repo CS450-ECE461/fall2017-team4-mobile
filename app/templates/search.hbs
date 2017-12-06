@@ -17,24 +17,9 @@
    <h3 id="recommended-jobs-title"> Our Top Picks for You. </h3>
     <div id="div-white-bar"{{action "showRecommendedJobSlider"}}><img id="recommended-jobs-open-close" src={{icon-asset "ctaUp.png"}}></div>
     <div id="recommended-jobs-body" class="show">
-        {{#each model as |user|}}
-
-        <div class="list">
-          <img src="https://avatars0.githubusercontent.com/ml/4?s=120&v=4">
-          <h3> Test Job Name</h3>
-
-          <p> Test </p>
-
-          <p> Test </p>
-
-          <br/>
-
-          <p> Test </p>
-
-          <button type="submit" class="see-more-button">Test</button>
-         </div>
-         <hr>
-        {{/each}}
+      {{#each model as |job|}}
+        {{job-entry job=job}}
+      {{/each}}
     </div>
 </div>
 </div>
