@@ -8,12 +8,16 @@
   .search-div {
     width: 100%;
     height: 100%;
+
     input {
+      font-family: $waldo-font;
+      font-size: 14px;
       width: 100%;
       height: 100%;
       text-indent: 10px;
     }
   }
+
   img {
     position: absolute;
     height: 20px;

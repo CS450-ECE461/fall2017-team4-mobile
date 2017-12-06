@@ -1,0 +1,34 @@
+<header>
+  {{#if (eq appController.currentRouteName "detailed-search.searches")}}
+    {{top-header
+      title="Job Search"
+      clickFilter=(action 'onClickFilter')
+      clickBack=(action 'onClickBack')
+    }}
+  {{else if (eq appController.currentRouteName "detailed-search.search-results")}}
+    {{top-header
+      title="Search Results"
+      clickFilter=(action 'onClickFilter')
+      clickBack=(action "onClickBack")
+    }}
+  {{/if}}
+  {{#link-to 'detailed-search.search-results' class="search-bars"}}
+  {{!-- <div "> --}}
+
+      {{search-bar
+        placeholder=searchBarText
+        onInput=(action "onSearchBarInput")
+        value=searchValue
+        image=(icon-asset "searchHome.png")
+      }}
+
+    {{search-bar
+      placeholder=locationText
+      onInput=(action "onLocationInput")
+      value=locationValue
+      image=(icon-asset "location.png")
+    }}
+  {{!-- </div> --}}
+  {{/link-to}}
+</header>
+{{outlet}}

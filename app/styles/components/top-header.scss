@@ -1,9 +1,12 @@
 .top-header {
+  font-family: $waldo-font;
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  color:white;
+  color: white;
+  font-weight: 600;
+  margin: 10px 0px 10px 0px;
 
   .back {
     font-size: 12pt;
@@ -12,7 +15,7 @@
 
   .title {
     text-align: center;
-    font-size: 16pt;
+    font-size: 18px;
   }
 
   .filter {
