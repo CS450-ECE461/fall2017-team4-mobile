@@ -4,11 +4,11 @@
   attachment=connectorAttachment
   targetAttachment=connectorTargetAttachment
 }}
-    <div class="connector"></div>
+    <div class="connector" id={{concat elementId "connector"}}></div>
 {{/liquid-tether}}
 
 {{#liquid-tether
-  target=".connector"
+  target=(concat "#" elementId "connector")
   attachment=boxAttachment
   targetAttachment=boxTargetAttachment
   }}
