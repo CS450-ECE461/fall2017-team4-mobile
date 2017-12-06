@@ -162,10 +162,11 @@
 
   .list img {
     float: left;
-    width: 25%;;
-    height: 25%;
+    width: 20%;;
+    height: 20%;
     margin-right: 10px;
     display:inline;
+    margin-top:15px
 
   }
 
@@ -200,10 +201,11 @@
   }
 
   .profile-list-second-column img {
-    height:20px;
+    height:17px;
     width:30px;
     float:right;
-    margin-top:10px;
+    margin-top:11px;
+    margin-right:-4px;
   }
 
   .profile-list-second-column p {
