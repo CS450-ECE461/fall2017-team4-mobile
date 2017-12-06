@@ -1,0 +1,53 @@
+.job-entry {
+  padding: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: $waldo-font;
+  border-bottom: solid 1px $waldo-outline;
+
+  .job-left {
+    display: flex;
+
+    .title {
+      font-size: 14pt;
+    }
+
+    .company-logo {
+      width: $image-width;
+      height: $image-height;
+    }
+
+    .job-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 12px;
+
+      .job-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .view-job {
+        font-size: 14pt;
+      }
+    }
+  }
+  .job-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heart-icon {
+      height: 19.032px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .small {
+    font-size: 10pt;
+  }
+
+}

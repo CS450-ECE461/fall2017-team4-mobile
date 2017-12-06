@@ -23,7 +23,8 @@ Router.map(function() {
     this.route('searches');
     this.route('search-results');
   });
-  this.route('detailed-routes', function() {});
+  this.route('job-detail', {path: 'job-detail/:id'});
+  this.route('company-detail', {path: 'company-detail/:id'});
 });
 
 export default Router;
