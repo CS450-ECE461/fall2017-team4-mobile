@@ -33,35 +33,48 @@
 
       <div class="div-experience-list">
         <h2> Experience </h2>
-          {{#each model as |experience|}}
 
           {{profile-list
             imageSrc=(image-asset "highalpha-company.png")
             jobName='Graphical Design Intern'
-            dateRange='May 2016 - Present'
-            companyName='IUPUI'
-            location='Indianapolis, IN'
-            buttonText='...see more' }}
+            dateRange='Feb 2014 - Jan 2016'
+            companyName='High Alpha'
+            location='Indianapolis, IN'}}
 
           <hr>
 
-        {{/each}}
+          {{profile-list
+            imageSrc=(image-asset "spinweb.jpg")
+            jobName='Graphical Designer'
+            dateRange='Feb 2016 - May 2016'
+            companyName='Spinweb'
+            location='Seattle, IN'}}
+
+          <hr>
+
+          {{profile-list
+            imageSrc=(image-asset "coralroot.jpg")
+            jobName='Graphical Design Intern'
+            dateRange='Aug 2016 - Present'
+            companyName='Coral Root'
+            location='Indianapolis, IN'}}
+
+          <hr>
       </div>
 
       <div class="div-education-list">
         <h2> Education </h2>
-        {{#each model as |experience|}}
 
         {{profile-list
-          imageSrc=(image-asset "hyperquake.jpeg")
+          imageSrc=(image-asset "university4.png")
           jobName='Visual Communications'
-          dateRange='2013 - 2017'
+          dateRange='2011 - 2015'
           companyName='IUPUI'
-          location='Indianapolis, IN'
-          buttonText='...see more' }}
+          location='Indianapolis, IN' }}
+
+
         <hr>
 
-        {{/each}}
       </div>
 
     <div class="div-skills-list">
