@@ -12,12 +12,11 @@ export default Controller.extend({
         conversationId: this.get('model.conversationId')
       }).save().then(() => {
         this.set('message', "");
-        this.get('model.messages').reload()
       });
     },
 
     backAction() {
-      this.transitionToRoute('chat')
+      this.transitionToRoute('chat.chat')
     },
 
     profileAction() {

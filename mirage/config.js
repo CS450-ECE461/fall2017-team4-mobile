@@ -185,7 +185,7 @@ export default function() {
       id: "124",
       type: "employee",
       attributes: {
-        name: "Bill Murphy"
+        name: "John Smith"
       }
     }]
   })

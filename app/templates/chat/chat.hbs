@@ -1,9 +1,9 @@
 {{#each model as |entry|}}
-  {{#link-to 'conversation' entry.conversation}}
-  {{conversation-entry imageSrc=entry.conversation.employee.image
+  {{#link-to 'conversation' entry.id}}
+  {{conversation-entry imageSrc=(image-asset )
                        message=entry.messagePreview
                        companyName="@Cool Company"
-                       personName=entry.conversation.employee.name
+                       personName="John Smith"
                     }}
   {{/link-to}}
 {{/each}}
