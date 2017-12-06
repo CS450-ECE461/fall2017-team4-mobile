@@ -8,9 +8,9 @@ moduleForComponent('time-converter', 'helper:time-converter', {
 
 // Replace this with your real tests.
 test('it renders', function(assert) {
-  this.set('inputValue', '1234');
+  this.set('inputValue', undefined);
 
   this.render(hbs`{{time-converter inputValue}}`);
 
-  assert.equal(this.$().text().trim(), 'Sat, Dec 31, 1233');
+  assert.equal(this.$().text().trim(), 'Inv,alid Da,te');
 });
