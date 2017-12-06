@@ -98,6 +98,13 @@
 
   .profile-top h1 {
     margin-bottom: -10px;
+    font-weight: 700;
+    font-size:22px;
+  }
+
+  .profile-top h2 {
+    margin-top: -5px;
+    font-size:14px;
   }
 
   .profile-buttons {
@@ -110,7 +117,7 @@
   .portfolio-button {
     background-color: black;
     height: 50px;
-    width: 49%;
+    width: 49.9%;
     cursor: pointer;
     color: white;
     font-size: 17px;
@@ -122,7 +129,7 @@
   .resume-button {
     background-color:black;
     height: 50px;
-    width: 49%;
+    width: 49.9%;
     cursor: pointer;
     color: white;
     font-size: 17px;
