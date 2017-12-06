@@ -67,7 +67,7 @@ export default function() {
     }
   );
 
-  this.get('/users/:id', (schema,req) => {
+  this.get('/users/:id', (schema) => {
     return schema.users.find("1");
   });
 
