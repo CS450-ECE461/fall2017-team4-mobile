@@ -1,10 +1,22 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  imageSrc: '',
   message: '',
-  personName: '',
   companyName: '',
+  conversation: null,
+  dotsClicked: false,
 
-  classNames: ['conversation-entry']
+  classNames: ['conversation-entry'],
+
+  onArrowClicked: () => {},
+
+  actions: {
+    clickArrow() {
+      this.get('onArrowClicked')(this.get('conversation'))
+    },
+
+    clickDots() {
+      this.toggleProperty('dotsClicked')
+    }
+  }
 });

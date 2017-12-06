@@ -19,16 +19,16 @@ export default function() {
 
   this.get('/employees/:id', (schema, request) => {
     return schema.employees.find(request.params.id);
-  })
+  });
 
   this.get('/messages/:id', (schema, request) => {
     return schema.messages.find(request.params.id);
-  })
+  });
 
-  this.get('/conversations', {
+  this.get('/chats', {
       data: [
         {
-          type:"conversation",
+          type:"chat",
           id: "1",
           relationships: {
             messages: {
@@ -46,7 +46,7 @@ export default function() {
           }
         },
         {
-          type:"conversation",
+          type:"chat",
           id: "2",
           relationships: {
             messages: {
@@ -66,6 +66,10 @@ export default function() {
       ]
     }
   );
+
+  this.get('/users/:id', (schema) => {
+    return schema.users.find("1");
+  });
 
   this.get('/jobs', {
       data: [
