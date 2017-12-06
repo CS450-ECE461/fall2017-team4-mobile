@@ -66,6 +66,54 @@ export default function() {
     }
   );
 
+  this.get('/jobs', {
+      data: [
+        {
+          type: "job",
+          id: "1",
+          attributes: {
+            title: "Graphics Designer",
+            location: "Indianapolis, IN"
+          },
+          relationships: {
+            company: {
+              data: {type: "company", id: "1"}
+            }
+          }
+        },
+        {
+          type: "job",
+          id: "2",
+          attributes: {
+            title: "Web Designer",
+            location: "Indianapolis, IN"
+          },
+          relationships: {
+            company: {
+              data: {type: "company", id: "2"}
+            }
+          }
+        }
+      ],
+      included: [
+        {
+          type: "company",
+          id: "1",
+          attributes: {
+            name: "Salesforce",
+            logo: "https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/images/source/salesforce.jpg"
+          }
+        },
+        {
+          type: "company",
+          id: "2",
+          attributes: {
+            name: "Genesys",
+            logo: "https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/images/source/genesys.png"
+          }
+        }
+      ]
+  });
 
   this.passthrough('http://165.227.76.52:5000/**');
 }
