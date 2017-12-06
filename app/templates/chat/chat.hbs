@@ -1,9 +1,10 @@
 {{#each model as |entry|}}
-  {{conversation-entry
-    conversation=entry.conversation
-    message=entry.messagePreview
-    companyName="@Cool Company"
-    onArrowClicked=(action 'onArrowClicked')
-  }}
+  {{#link-to 'conversation' entry.id}}
+  {{conversation-entry imageSrc=(image-asset )
+                       message=entry.messagePreview
+                       companyName="@Cool Company"
+                       personName="John Smith"
+                    }}
+  {{/link-to}}
 {{/each}}
 {{outlet}}

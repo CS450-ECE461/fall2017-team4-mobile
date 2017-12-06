@@ -1,7 +1,31 @@
-{{#link-to "chat"}}
-  <span>Back</span>
-{{/link-to}}
-{{model}}
-Entire Conversation String
+<div>
+  <header id="conversation-header">
+    {{top-header
+      title="John Smith"
+      clickLeft=(action 'backAction')
+      clickRight=(action 'profileAction')
+      rightText="Profile"}}
+  </header>
 
+  {{#liquid-tether
+    target="#conversation-header"
+    attachment='middle middle'
+    targetAttachment='bottom middle'}}
+    <div class="employee-chat-image-div">
+      <img src="{{image-asset 'joshMH.jpg'}}" class="employee-chat-image"/>
+    </div>
+  {{/liquid-tether}}
+
+  <div class="messages-box">
+    {{#each model.messages as |message|}}
+      {{chat-message message=message}}
+    {{/each}}
+  </div>
+
+  <div class="edit-box">
+    {{input value=message class="message-input" enter='sendMessage'}}
+    <img src="{{icon-asset 'waldoFacetime.png'}}" class="facetime"/>
+    <img src="{{icon-asset 'waldoCall.png'}}" class="call"/>
+  </div>
+</div>
 {{outlet}}

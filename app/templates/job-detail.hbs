@@ -1,2 +1,7 @@
-Job Id: {{model.id}}
+
+You can chat with:
+{{#each model.employees as |employee|}}
+  <span {{action 'startConversation' employee}}>{{employee.name}}</span>
+{{/each}}
+
 {{outlet}}
