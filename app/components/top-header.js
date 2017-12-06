@@ -4,16 +4,18 @@ export default Component.extend({
   classNames: ['top-header'],
   title: '',
 
-  clickBack: null,
-  clickFilter: null,
+  clickLeft: null,
+  leftText: '',
+  clickRight: null,
+  rightText: '',
 
   actions: {
-    backAction() {
-      this.get('clickBack')();
+    leftAction() {
+      this.get('clickLeft')();
     },
 
-    filterAction() {
-      this.get('clickFilter')();
+    rightAction() {
+      this.get('clickRight')();
     }
   }
 });

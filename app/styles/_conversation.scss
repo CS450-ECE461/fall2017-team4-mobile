@@ -1,0 +1,13 @@
+.mdl-route__conversation {
+  header {
+    height: $header-height;
+    background: $waldo-yellow;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    .top-header {
+      padding-top: 26px;
+    }
+  }
+
+}

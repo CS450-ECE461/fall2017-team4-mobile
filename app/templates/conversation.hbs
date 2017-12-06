@@ -1,3 +1,19 @@
+<header id="conversation-header">
+  {{top-header
+    title="John Smith"
+    clickLeft=(action 'backAction')
+    clickRight=(action 'profileAction')
+    rightText="Profile"}}
+</header>
+
+{{#liquid-tether
+  target="#conversation-header"
+  attachment='middle middle'
+  targetAttachment='bottom middle'}}
+  <span>Wassup</span>
+{{/liquid-tether}}
+
+
 {{#link-to "chat"}}
   <span>Back</span>
 {{/link-to}}

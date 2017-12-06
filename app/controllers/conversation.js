@@ -10,6 +10,14 @@ export default Controller.extend({
         fromId: this.get('gatekeeper.currentUser.id'),
         conversationId: this.get('model.conversationId')
       }).save();
+    },
+
+    backAction() {
+      console.log("Going Back");
+    },
+
+    profileAction() {
+      console.log("See Profile")
     }
   }
 });

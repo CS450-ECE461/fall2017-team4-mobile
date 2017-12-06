@@ -2,7 +2,8 @@
   {{#if (eq appController.currentRouteName "chat.chat")}}
       {{top-header
         title="Chat"
-        clickFilter=(action chatController.actions.onClickFilter)
+        clickRight=(action chatController.actions.onClickFilter)
+        rightText="Filter"
       }}
       {{search-bar
         placeholder=chatController.searchBarText
