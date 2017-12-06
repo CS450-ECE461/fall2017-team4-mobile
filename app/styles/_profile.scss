@@ -108,23 +108,25 @@
   }
 
   .portfolio-button {
-    background-color: $waldo-blue;
+    background-color: black;
     height: 50px;
     width: 49%;
     cursor: pointer;
     color: white;
-    font-size: 10px;
+    font-size: 17px;
+    font-weight: 700;
     display: inline;
     border-radius: 0px;
   }
 
   .resume-button {
-    background-color: $waldo-blue;
+    background-color:black;
     height: 50px;
     width: 49%;
     cursor: pointer;
     color: white;
-    font-size: 10px;
+    font-size: 17px;
+    font-weight: 700;
     display: inline;
     border-radius: 0px;
   }
@@ -175,15 +177,33 @@
     display:block;
   }
 
+  .profile-list-first-column p {
+    font-size:11px;
+    font-weight: 400;
+  }
+
+  .company {
+    margin-bottom:-5px;
+  }
+
   .profile-list-second-column {
     display:block;
     float:right;
     margin-top:-27%;
   }
 
-  .see-more-button{
+  .profile-list-second-column img {
+    height:20px;
+    width:30px;
     float:right;
+    margin-top:10px;
   }
+
+  .profile-list-second-column p {
+    font-size:12px;
+    margin-top:17px;
+  }
+
 
 
   /* profile-list-css end */
