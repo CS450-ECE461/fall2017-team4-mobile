@@ -12,19 +12,23 @@
       clickBack=(action "onClickBack")
     }}
   {{/if}}
-  <div class="search-bars">
-    {{search-bar
-      placeholder=searchBarText
-      onInput=(action "onSearchBarInput")
-      value=searchValue
-      image=(icon-asset "searchHome.png")
-    }}
+  {{#link-to 'detailed-search.search-results' class="search-bars"}}
+  {{!-- <div "> --}}
+
+      {{search-bar
+        placeholder=searchBarText
+        onInput=(action "onSearchBarInput")
+        value=searchValue
+        image=(icon-asset "searchHome.png")
+      }}
+
     {{search-bar
       placeholder=locationText
       onInput=(action "onLocationInput")
       value=locationValue
       image=(icon-asset "location.png")
     }}
-  </div>
+  {{!-- </div> --}}
+  {{/link-to}}
 </header>
 {{outlet}}
