@@ -1,5 +1,4 @@
 import ENV from '../config/environment';
-import { faker} from 'ember-cli-mirage';
 
 export default function() {
   this.urlPrefix = `${ENV.APP.API}`;
@@ -77,7 +76,7 @@ export default function() {
           type: "job",
           id: "1",
           attributes: {
-            title: "Software Developer",
+            title: "Graphics Designer",
             location: "Indianapolis, IN"
           },
           relationships: {
@@ -90,8 +89,8 @@ export default function() {
           type: "job",
           id: "2",
           attributes: {
-            title: "Java Guru",
-            location: "San Fransisco, CA"
+            title: "Web Designer",
+            location: "Indianapolis, IN"
           },
           relationships: {
             company: {
@@ -106,7 +105,7 @@ export default function() {
           id: "1",
           attributes: {
             name: "Salesforce",
-            logo: faker.image.business()
+            logo: "https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/images/source/salesforce.jpg"
           }
         },
         {
@@ -114,7 +113,7 @@ export default function() {
           id: "2",
           attributes: {
             name: "Genesys",
-            logo: faker.image.business()
+            logo: "https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/images/source/genesys.png"
           }
         }
       ]

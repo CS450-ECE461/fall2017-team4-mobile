@@ -98,6 +98,13 @@
 
   .profile-top h1 {
     margin-bottom: -10px;
+    font-weight: 700;
+    font-size:22px;
+  }
+
+  .profile-top h2 {
+    margin-top: -5px;
+    font-size:14px;
   }
 
   .profile-buttons {
@@ -108,23 +115,25 @@
   }
 
   .portfolio-button {
-    background-color: $waldo-blue;
+    background-color: black;
     height: 50px;
-    width: 49%;
+    width: 49.9%;
     cursor: pointer;
     color: white;
-    font-size: 10px;
+    font-size: 17px;
+    font-weight: 700;
     display: inline;
     border-radius: 0px;
   }
 
   .resume-button {
-    background-color: $waldo-blue;
+    background-color:black;
     height: 50px;
-    width: 49%;
+    width: 49.9%;
     cursor: pointer;
     color: white;
-    font-size: 10px;
+    font-size: 17px;
+    font-weight: 700;
     display: inline;
     border-radius: 0px;
   }
@@ -139,11 +148,32 @@
     background-color: white;
   }
 
+  .div-experience-list h2 {
+    font-weight: 500;
+    font-size:18px;
+  }
+
   .div-education-list {
     padding: 0px 20px;
     margin-top: -10px;
     background-color: white;
   }
+
+  .div-education-list h2 {
+    font-weight: 500;
+    font-size:18px;
+  }
+
+  .div-skills-list h2 {
+    font-weight: 500;
+    font-size:18px;
+  }
+
+  .div-contact h2 {
+    font-weight: 500;
+    font-size:18px;
+  }
+
 
   /* profile-list css begin */
   .list {
@@ -153,10 +183,11 @@
 
   .list img {
     float: left;
-    width: 25%;;
-    height: 25%;
+    width: 20%;;
+    height: 20%;
     margin-right: 10px;
     display:inline;
+    margin-top:15px
 
   }
 
@@ -175,15 +206,34 @@
     display:block;
   }
 
+  .profile-list-first-column p {
+    font-size:11px;
+    font-weight: 400;
+  }
+
+  .company {
+    margin-bottom:-5px;
+  }
+
   .profile-list-second-column {
     display:block;
     float:right;
     margin-top:-27%;
   }
 
-  .see-more-button{
+  .profile-list-second-column img {
+    height:17px;
+    width:30px;
     float:right;
+    margin-top:11px;
+    margin-right:-4px;
   }
+
+  .profile-list-second-column p {
+    font-size:12px;
+    margin-top:17px;
+  }
+
 
 
   /* profile-list-css end */
