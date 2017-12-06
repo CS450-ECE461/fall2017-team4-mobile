@@ -4,3 +4,6 @@
     <button class="add-search-button">Save Search</button>
   </div>
 </div>
+{{#each model as |job|}}
+  {{job-entry job=job}}
+{{/each}}

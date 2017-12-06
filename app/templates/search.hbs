@@ -8,10 +8,12 @@
 <h3 class="search-page-slogan"> Let's find that job you've been looking for. </h3>
 
 <div class="div-search-bar">
-{{search-bar
-  placeholder="Search For Jobs"
-  image=(icon-asset "waldoSearch.png")
-}}
+{{#link-to "detailed-search"}}
+  {{search-bar
+    placeholder="Search For Jobs"
+    image=(icon-asset "waldoSearch.png")
+  }}
+{{/link-to}}
 </div>
 <div id="recommended-jobs-header">
    <h3 id="recommended-jobs-title"> Our Top Picks for You. </h3>
