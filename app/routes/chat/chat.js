@@ -1,6 +1,6 @@
-import Route from '@ember/routing/route';
+import Gatekeeper from 'ember-cli-gatekeeper';
 
-export default Route.extend({
+export default Gatekeeper.User.AuthenticatedRoute.extend({
   /**
    * For each conversation, get the first message of the conversation, and add both
    * the conversation and the first message to the `combined` array and return that array
