@@ -8,11 +8,12 @@ let GatekeeperStub = Ember.Service.extend({
   isSignedIn: true
 });
 
-moduleForAcceptance('Acceptance | login',  {
+moduleForAcceptance('Acceptance | search',  {
   beforeEach() {
     this.application.register('service:gatekeeperStub', GatekeeperStub);
     this.application.inject('route:search', 'gatekeeper', 'service:gatekeeperStub');
     this.application.inject('route:detailed-search', 'gatekeeper', 'service:gatekeeperStub');
+    this.application.inject('route:detailed-search.searches', 'gatekeeper', 'service:gatekeeperStub');
   }
 });
 
@@ -21,11 +22,11 @@ test('A user can view profile based jobs', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/search');
-    // assert.equal(Ember.$(".job-entry:visible").length, 0)
+    assert.equal(Ember.$(".job-entry:visible").length, 0)
     click("#recommended-jobs-open-close");
-    // andThen() {
-    //     assert.equal(Ember.$(".job-entry:visible").length, 2)
-    // }
+    andThen(function() {
+        assert.equal(Ember.$(".job-entry:visible").length, 2)
+    })
   });
 });
 
