@@ -2,6 +2,11 @@ import ENV from '../config/environment';
 
 export default function() {
   this.urlPrefix = `${ENV.APP.API}`;
+
+  this.post("/gatekeeper/v1/oauth2/token", { })
+
+  this.get("/gatekeeper/v1/accounts/me", { })
+
   this.namespace = '/v1';
 
   this.get('/users', (schema) => {
