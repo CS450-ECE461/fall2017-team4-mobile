@@ -6,6 +6,5 @@ moduleFor('route:chat', 'Unit | Route | chat', {
 });
 
 test('it exists', function(assert) {
-  // let route = this.subject();
   assert.ok(true);
 });

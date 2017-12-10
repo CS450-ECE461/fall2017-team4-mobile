@@ -1,4 +1,4 @@
-import Route from '@ember/routing/route';
+import Gatekeeper from 'ember-cli-gatekeeper';
 
-export default Route.extend({
+export default Gatekeeper.User.AuthenticatedRoute.extend({
 });
