@@ -1,14 +1,23 @@
 import ENV from '../config/environment';
 
 let realEnpoints = ['jobs'];
+let uuid = "91e4d46d-e3a1-4178-b632-ffc2a525119a";
 
 export default function() {
-  this.post("/gatekeeper/v1/oauth2/token", { "token_type": "Bearer" });
+  this.post("/gatekeeper/v1/oauth2/token", { });
 
-  this.get("/gatekeeper/v1/accounts/me", { "account": { "_id": "id1" } });
+  this.post("/gatekeeper/v1/oauth2/logout", { });
+
+  this.get("/gatekeeper/v1/accounts/me", { "account": { "_id": `${uuid}` } });
+
+  this.post("/gatekeeper/v1/accounts", { "account": { "_id": `${uuid}` } });
 
   this.namespace = '/v1';
   this.urlPrefix = `${ENV.APP.API}`;
+
+  this.post('/users/:id', {
+    data: { id: `${uuid}`, type: "user" }
+  });
 
   this.get('/users', (schema) => {
     return schema.users.all();
