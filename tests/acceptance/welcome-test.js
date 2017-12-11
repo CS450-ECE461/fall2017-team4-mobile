@@ -1,7 +1,7 @@
 import { test } from 'qunit';
 import moduleForAcceptance from 'job-search-app/tests/helpers/module-for-acceptance';
 
-moduleForAcceptance('Acceptance | login');
+moduleForAcceptance('Acceptance | welcome');
 
 test('Going to the app takes user to the welcome page', function(assert) {
   visit('/');

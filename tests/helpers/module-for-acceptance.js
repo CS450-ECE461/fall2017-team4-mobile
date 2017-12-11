@@ -6,6 +6,9 @@ import destroyApp from '../helpers/destroy-app';
 export default function(name, options = {}) {
   module(name, {
     beforeEach() {
+      // clear all user information in local storage so that it doesn't persist between tests
+      window.localStorage.clear();
+      
       this.application = startApp();
 
       if (options.beforeEach) {

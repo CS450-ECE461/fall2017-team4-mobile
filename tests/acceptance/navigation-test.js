@@ -10,4 +10,14 @@ test('Navigating to welcome screens while logged in takes user to profile page',
   andThen(function() {
     assert.equal(currentURL(), '/profile');
   });
+
+  visit("/sign-in");
+  andThen(function() {
+    assert.equal(currentURL(), '/profile');
+  });
+
+  visit("/sign-up");
+  andThen(function() {
+    assert.equal(currentURL(), '/profile');
+  });
 });
