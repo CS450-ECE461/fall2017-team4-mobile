@@ -10,6 +10,6 @@ test('The user can log in', function(assert) {
     assert.equal(currentURL(), '/sign-in');
     fillIn("[type=email]", "test@test.com");
     fillIn("[type=password]", "test");
-    //click("[type=submit]");
+    click("[type=submit]");
   });
 });

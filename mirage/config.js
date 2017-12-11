@@ -1,13 +1,14 @@
 import ENV from '../config/environment';
 
+let realEnpoints = ['jobs'];
+
 export default function() {
-  this.urlPrefix = `${ENV.APP.API}`;
 
   this.post("/gatekeeper/v1/oauth2/token", { })
-
   this.get("/gatekeeper/v1/accounts/me", { })
 
   this.namespace = '/v1';
+  this.urlPrefix = `${ENV.APP.API}`;
 
   this.get('/users', (schema) => {
     return schema.users.all();
@@ -125,7 +126,7 @@ export default function() {
   //   ]
   // })
 
-  this.get('/jobs', {
+  this.get('jobs', {
       data: [
         {
           type: "job",
@@ -188,7 +189,7 @@ export default function() {
     }
   })
 
-  this.get('jobs/:id/employees', {
+  this.get('/jobs/:id/employees', {
     data: [{
       id: "124",
       type: "employee",
@@ -197,5 +198,8 @@ export default function() {
       }
     }]
   })
-  this.passthrough('http://165.227.76.52:5000/**');
+
+  if (ENV.environment !== "test") {
+    this.passthrough('http://165.227.76.52:5000/**', ...realEnpoints);
+  }
 }
