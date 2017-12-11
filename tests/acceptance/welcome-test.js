@@ -58,7 +58,7 @@ test('Signing up redirects user to sign-in page', function(assert) {
 });
 
 test('User can sign out', function(assert) {
-  openAllRoutes();
+  openRoutes('profile');
   visit('/profile');
 
   andThen(function() {

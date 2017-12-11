@@ -5,8 +5,8 @@ moduleForAcceptance('Acceptance | navigation');
 
 test('Navigating to welcome screens while logged in takes user to profile page', function(assert) {
   login();
+  
   visit("/welcome");
-
   andThen(function() {
     assert.equal(currentURL(), '/profile');
   });
