@@ -10,7 +10,7 @@ export default Controller.extend({
                   user: user_,
                   employee: employee_
               }).save().then(conversation => {
-                this.transitionToRoute('conversation', conversation)
+                this.transitionToRoute('conversation', conversation.id)
               })
           })
        }
