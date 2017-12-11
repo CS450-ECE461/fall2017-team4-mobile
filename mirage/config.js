@@ -3,9 +3,9 @@ import ENV from '../config/environment';
 let realEnpoints = ['jobs'];
 
 export default function() {
+  this.post("/gatekeeper/v1/oauth2/token", { "token_type": "Bearer" });
 
-  this.post("/gatekeeper/v1/oauth2/token", { })
-  this.get("/gatekeeper/v1/accounts/me", { })
+  this.get("/gatekeeper/v1/accounts/me", { "account": { "_id": "id1" } });
 
   this.namespace = '/v1';
   this.urlPrefix = `${ENV.APP.API}`;
