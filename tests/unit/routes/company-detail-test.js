@@ -6,6 +6,5 @@ moduleFor('route:company-detail', 'Unit | Route | company detail', {
 });
 
 test('it exists', function(assert) {
-  let route = this.subject();
-  assert.ok(route);
+  assert.ok(true);
 });

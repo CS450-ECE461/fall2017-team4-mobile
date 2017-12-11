@@ -6,6 +6,5 @@ moduleFor('route:search', 'Unit | Route | search', {
 });
 
 test('it exists', function(assert) {
-  // let route = this.subject();
   assert.ok(true);
 });
