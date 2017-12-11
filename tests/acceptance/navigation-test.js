@@ -3,10 +3,11 @@ import moduleForAcceptance from 'job-search-app/tests/helpers/module-for-accepta
 
 moduleForAcceptance('Acceptance | navigation');
 
-test('visiting /navigation', function(assert) {
-  visit('/welcome');
+test('Navigating to welcome screens while logged in takes user to profile page', function(assert) {
+  login();
+  visit("/welcome");
 
   andThen(function() {
-    assert.equal(currentURL(), '/welcome');
+    assert.equal(currentURL(), '/profile');
   });
 });

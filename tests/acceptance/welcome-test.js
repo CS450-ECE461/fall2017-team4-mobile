@@ -1,12 +1,7 @@
 import { test } from 'qunit';
 import moduleForAcceptance from 'job-search-app/tests/helpers/module-for-acceptance';
-import openRoutes from 'job-search-app/tests/helpers/stub-gatekeeper';
 
-moduleForAcceptance('Acceptance | login', {
-  afterEach() {
-    window.localStorage.clear()
-  }
-});
+moduleForAcceptance('Acceptance | login');
 
 test('Going to the app takes user to the welcome page', function(assert) {
   visit('/');
@@ -31,9 +26,7 @@ test('The user can log in', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/sign-in');
-    fillIn("[type=email]", "dogs@cats.com");
-    fillIn("[type=password]", "test");
-    click("[type=submit]");
+    login();
     andThen(() => {
       assert.equal(currentURL(), '/profile');
     })
@@ -65,13 +58,12 @@ test('Signing up redirects user to sign-in page', function(assert) {
 });
 
 test('User can sign out', function(assert) {
-  openRoutes(this.application, "profile");
-
+  openAllRoutes();
   visit('/profile');
 
   andThen(function() {
     assert.equal(currentURL(), '/profile');
-    click(".settings-button");
+    logout();
     andThen(() => {
       assert.equal(currentURL(), '/sign-in');
     })
