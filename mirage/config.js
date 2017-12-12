@@ -1,13 +1,23 @@
 import ENV from '../config/environment';
 
+let realEnpoints = ['jobs'];
+let uuid = "91e4d46d-e3a1-4178-b632-ffc2a525119a";
+
 export default function() {
-  this.urlPrefix = `${ENV.APP.API}`;
+  this.post("/gatekeeper/v1/oauth2/token", { });
 
-  this.post("/gatekeeper/v1/oauth2/token", { })
+  this.post("/gatekeeper/v1/oauth2/logout", { });
 
-  this.get("/gatekeeper/v1/accounts/me", { })
+  this.get("/gatekeeper/v1/accounts/me", { "account": { "_id": `${uuid}` } });
+
+  this.post("/gatekeeper/v1/accounts", { "account": { "_id": `${uuid}` } });
 
   this.namespace = '/v1';
+  this.urlPrefix = `${ENV.APP.API}`;
+
+  this.post('/users/:id', {
+    data: { id: `${uuid}`, type: "user" }
+  });
 
   this.get('/users', (schema) => {
     return schema.users.all();
@@ -125,7 +135,7 @@ export default function() {
   //   ]
   // })
 
-  this.get('/jobs', {
+  this.get('jobs', {
       data: [
         {
           type: "job",
@@ -188,7 +198,7 @@ export default function() {
     }
   })
 
-  this.get('jobs/:id/employees', {
+  this.get('/jobs/:id/employees', {
     data: [{
       id: "124",
       type: "employee",
@@ -197,5 +207,8 @@ export default function() {
       }
     }]
   })
-  this.passthrough('http://165.227.76.52:5000/**');
+
+  if (ENV.environment !== "test") {
+    this.passthrough('http://165.227.76.52:5000/**', ...realEnpoints);
+  }
 }
