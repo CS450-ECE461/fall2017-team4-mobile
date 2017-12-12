@@ -14,11 +14,11 @@ export default Component.extend({
     },
 
     viewJobDetails() {
-      this.get('router').transitionTo('job-detail', this.get('job'));
+      this.get('router').transitionTo('job-detail', this.get('job.id'));
     },
 
     viewCompanyDetails() {
-      this.get('router').transitionTo('company-detail', this.get('job.company'));
+      this.get('router').transitionTo('company-detail', this.get('job.company.id'));
     }
   }
 });
