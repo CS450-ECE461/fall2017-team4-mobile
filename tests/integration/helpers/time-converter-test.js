@@ -7,10 +7,10 @@ moduleForComponent('time-converter', 'helper:time-converter', {
 });
 
 // Replace this with your real tests.
-test('it renders', function(assert) {
-  this.set('inputValue', undefined);
+test('it converts dates properly', function(assert) {
+  this.set('inputDate', "Mon Dec 11 2017 14:53:33 GMT-0500 (EST)");
 
-  this.render(hbs`{{time-converter inputValue}}`);
+  this.render(hbs`{{time-converter inputDate}}`);
 
-  assert.equal(this.$().text().trim(), 'Inv,alid Da,te');
+  assert.equal(this.$().text().trim(), 'Mon 2:53 PM');
 });
