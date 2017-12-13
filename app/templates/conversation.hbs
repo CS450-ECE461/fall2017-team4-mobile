@@ -18,7 +18,7 @@
 
   <div class="messages-box">
     {{#each model.messages as |message|}}
-      {{chat-message message=message}}
+      {{chat-message message=message class=(if (eq message.fromId gatekeeper.currentUser.id) 'my-chat' 'their-chat')}}
     {{/each}}
   </div>
 
