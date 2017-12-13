@@ -6,6 +6,12 @@ moduleForComponent('search-bar', 'Integration | Component | search bar', {
   integration: true
 });
 
+test('it renders', function(assert) {
+  this.render(hbs`{{search-bar}}`);
+
+  assert.equal(this.$().text().trim(), '');
+});
+
 test('Searching calls action and sets value', function(assert) {
   const SEARCH_VALUE = "Search Value";
 

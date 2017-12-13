@@ -6,9 +6,6 @@ moduleForComponent('job-entry', 'Integration | Component | job entry', {
 });
 
 test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
   this.render(hbs`{{job-entry}}`);
 
   assert.equal(this.$().text().replace(/\n/g, "").replace(/ /g, ""), "ViewJobDescription10h")
