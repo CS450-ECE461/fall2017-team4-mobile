@@ -1,5 +1,6 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  classNames: ['chat-message']
+  classNames: ['chat-message'],
+  gatekeeper: Ember.inject.service()
 });
