@@ -4,14 +4,14 @@
 </div>
 
 <div class="timestamp-div">
-  <span class="timestamp" id={{concat elementId "timestamp"}}>{{time-converter message.timestamp}}</span>
+  <span class="timestamp {{if (eq message.fromId gatekeeper.currentUser.id) 'my-timestamp' 'their-timestamp'}}" id={{concat elementId "timestamp"}}>{{time-converter message.timestamp}}</span>
 </div>
 
 {{#liquid-tether
   target=(concat "#" elementId "timestamp")
   attachment="bottom middle"
-  targetAttachment="top middle"
-  offset='8px 0'
+  targetAttachment="bottom middle"
+  offset='0px 0px'
 }}
-  <div class="chat-message-triangle"></div>
+  <div class="{{if (eq message.fromId gatekeeper.currentUser.id) 'my-chat-message-triangle' 'their-chat-message-triangle'}}"></div>
 {{/liquid-tether}}
