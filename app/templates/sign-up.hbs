@@ -1,0 +1,37 @@
+<div class="mdl-route__sign-up">
+
+  <div class="sign-in-options">
+    <button>
+      Facebook Sign Up
+    </button>
+
+    <button>
+      Google Sign Up
+    </button>
+  </div>
+
+  <span class="separator"><hr>OR<hr></span>
+
+  <div>
+    <div>{{input value=firstname placeholder="First Name"}}</div>
+    <div>{{input value=lastname placeholder="Last Name"}}</div>
+    <div>{{input value=email placeholder="Email"}}</div>
+    <div>{{input value=phone placeholder="Phone"}}</div>
+    <div class="sign-up-dropdowns">
+      <div id="left-dropdown">
+        {{#power-select options=cities verticalPosition='above' renderInPlace=true searchField="name" selected=city placeholder="City" onchange=(action "selectCity") as |city|}}
+          {{city.name}}
+        {{/power-select}}
+      </div>
+      <div id="right-dropdown">
+        {{#power-select options=states verticalPosition='above' renderInPlace=true searchField="name" selected=state placeholder="State" onchange=(action "selectState") as |state|}}
+          {{state.name}}
+        {{/power-select}}
+      </div>
+    </div>
+    <div>{{input value=password placeholder="Password"}}</div>
+  </div>
+  <button {{action 'createAccount'}} id="sign-up">Sign Up</button>
+
+
+</div>

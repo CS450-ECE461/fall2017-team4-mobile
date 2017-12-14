@@ -1,5 +1,58 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-Hey There!
-{{!-- Feel free to remove this! --}}
-
+<main>
 {{outlet}}
+</main>
+
+
+{{#if showApplicationTemplate}}
+  <nav class='application'>
+    {{#link-to "search" class='nav-button'}}
+      <div>
+        {{#if (eq currentRouteName "search")}}
+        <img src={{icon-asset "waldoSearch_white.png"}}>
+        {{else}}
+        <img src={{icon-asset "waldoSearch.png"}}>
+        {{/if}}
+        <span>Search</span>
+      </div>
+    {{/link-to}}
+
+    {{#link-to "chat" class='nav-button'}}
+      <div>
+        {{#if (eq currentRouteName "chat.jobs")}}
+          <img src={{icon-asset "waldoJobs_white.png"}}>
+        {{else if (eq currentRouteName "chat.chat")}}
+          <img src={{icon-asset "waldoJobs_white.png"}}>
+        {{else if (eq currentRouteName "chat.companies")}}
+          <img src={{icon-asset "waldoJobs_white.png"}}>
+        {{else if (eq currentRouteName "chat.requests")}}
+          <img src={{icon-asset "waldoJobs_white.png"}}>
+        {{else}}
+          <img src={{icon-asset "waldoJobs.png"}}>
+        {{/if}}
+        <span>Jobs</span>
+      </div>
+    {{/link-to}}
+
+    {{#link-to "notifications" class='nav-button'}}
+      <div>
+        {{#if (eq currentRouteName "notifications")}}
+        <img src={{icon-asset "waldoNotifications_white.png"}}>
+        {{else}}
+        <img src={{icon-asset "waldoNotifications.png"}}>
+        {{/if}}
+        <span>Notifications</span>
+      </div>
+    {{/link-to}}
+
+    {{#link-to "profile" class='nav-button'}}
+      <div>
+        {{#if (eq currentRouteName "profile")}}
+        <img src={{icon-asset "waldoProfile_white.png"}}>
+        {{else}}
+        <img src={{icon-asset "waldoProfile.png"}}>
+        {{/if}}
+        <span>Profile</span>
+      </div>
+    {{/link-to}}
+  </nav>
+{{/if}}

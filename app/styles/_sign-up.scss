@@ -1,0 +1,161 @@
+.mdl-route__sign-up {
+  background-color: $waldo-red;
+  color: white;
+  font-family: $waldo-font;
+  text-align: center;
+  height: 100vh;
+
+  .sign-in-options {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+
+    button {
+      background-color: white;
+      color: $waldo-red;
+      border-radius: 0px;
+      margin: 5px 30px;
+      width: calc(100% - 60px);
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: $waldo-font;
+    }
+  }
+
+  span.separator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 12px;
+    font-size: 16px;
+
+    hr {
+      margin: 8px 20px;
+      width: 10%;
+      border-color: white;
+    }
+  }
+
+  input {
+    color: white;
+    background-color: $waldo-red;
+    border-color: white;
+    border-style: solid;
+    font-family: $waldo-font;
+    border-width: 1px;
+    margin: 10px 30px;
+    width: calc(100% - 90px);
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  input::placeholder {
+    color: white;
+  }
+
+  button#sign-up {
+    width: 100%;
+    background-color: white;
+    color: $waldo-red;
+    font-family: $waldo-font;
+    font-weight: 700;
+    text-transform: none;
+    border-radius: 0px;
+    border: none;
+    height: 60px;
+    font-size: 20px;
+    box-shadow: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  .ember-power-select-trigger {
+    color: white;
+    background-color: $waldo-red;
+    border-color: white;
+    border-style: solid;
+    font-family: $waldo-font;
+    border-width: 1px;
+    width: calc(100% - 30px);
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 0px;
+    line-height: unset;
+    min-height: unset;
+    text-align: left;
+  }
+
+  .ember-power-select-trigger:focus {
+    border-color: white;
+  }
+
+  .ember-power-select-placeholder {
+    color: white;
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .ember-power-select-selected-item {
+    color: white;
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .ember-basic-dropdown-content-wormhole-origin {
+    .ember-power-select-dropdown.ember-basic-dropdown-content--above {
+      border-radius: 0px;
+      font-family: $waldo-font;
+      background-color: $waldo-red;
+      border-color: white;
+      color: white;
+      width: calc(100% + 2px);
+      border-width: 1px;
+      border-style: solid;
+    }
+
+    .ember-power-select-option[aria-current="true"] {
+      background-color: $waldo-red;
+      border-color: white;
+      border-style: solid;
+      border-width: 1px;
+    }
+
+    .ember-power-select-search-input {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .ember-power-select-search-input:focus {
+      border-color: white;
+    }
+  }
+
+  .sign-up-dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div#left-dropdown {
+      width: 50%;
+      margin-right: 5px;
+      margin-left: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    div#right-dropdown {
+      width: 50%;
+      margin-right: 30px;
+      margin-left: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  span.ember-power-select-status-icon {
+    border-color: white transparent transparent transparent;
+  }
+}

@@ -1,0 +1,71 @@
+.conversation-entry {
+  display: flex;
+  padding: 17px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  height: 70px;
+  color: black;
+
+  .employee-image {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+  }
+
+  .conversation-options {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .arrow {
+      height: 20px;
+    }
+
+    .dots{
+      height: 9px;
+    }
+  }
+
+
+  .employee-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 100%;
+
+    .employee-title {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+}
+
+.contact-icons {
+
+  background: black;
+  height: 60px;
+  width: 120px;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -65px;
+
+  .facetime {
+    width: 40px;
+  }
+
+  .call{
+    width: 40px;
+  }
+}
+
+.connector {
+  margin-top:56px;
+}

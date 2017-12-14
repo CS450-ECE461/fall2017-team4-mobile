@@ -1,0 +1,26 @@
+<div class="list">
+  <img src={{imageSrc}}>
+
+<div class=profile-list-content>
+
+  <div class="profile-list-first-column">
+    <h3 class="job-name"> {{jobName}} </h3>
+    <p class="company"> {{companyName}} </p>
+    <p class="location"> {{location}} </p>
+  </div>
+
+  <div class="profile-list-second-column">
+    <a {{action 'seeMore'}}><img class="see-more-button" src="{{icon-asset "controlOpen.png"}}"/></a>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <p class="date-range"> {{dateRange}} </p>
+  </div>
+
+</div>
+
+
+</div>
+
+{{yield}}

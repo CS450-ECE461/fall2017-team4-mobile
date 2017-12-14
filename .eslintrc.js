@@ -1,4 +1,8 @@
 module.exports = {
+  globals: {
+    server: true,
+    Ember: true
+  },
   root: true,
   parserOptions: {
     ecmaVersion: 2017,

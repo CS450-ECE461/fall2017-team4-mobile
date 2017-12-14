@@ -21,3 +21,6 @@ cordova/node_modules
 cordova/plugins
 cordova/platforms
 cordova/res
+
+# jetbrains
+.idea/*

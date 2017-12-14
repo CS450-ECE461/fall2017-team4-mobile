@@ -1,0 +1,36 @@
+<div class="search-list-buttons">
+  <button class="saved-search-button" {{action "setSearchType" "Saved"}}>Saved Searches</button>
+  <button class="recent-search-button" {{action "setSearchType" "Recent"}}>Recent Searches</button>
+</div>
+<div class="search-lists">
+  {{#if (eq searchType "Saved")}}
+    <div id="saved-listing">
+      <h1 id="saved-search-heading">Saved Job Searches</h1>
+      <div id="saved-search-list">
+        {{#each searches as |search|}}
+          {{job-search-filter
+            searchText=search.text
+            searchLocation=search.location
+            image=(image-asset "waldo_white.png")
+          }}
+        {{/each}}
+      </div>
+    </div>
+  {{else}}
+    <div id="recent-listing">
+      <div id="recent-search">
+        <h1 id="recent-search-heading">Recent Job Searches</h1>
+        <img src="{{icon-asset "searchDelete.png"}}"/>
+      </div>
+      <div id="recent-search-list">
+        {{#each searches as |search|}}
+          {{job-search-filter
+            searchText=search.text
+            searchLocation=search.location
+            image=(image-asset "waldo_white.png")
+          }}
+        {{/each}}
+      </div>
+    </div>
+  {{/if}}
+</div>

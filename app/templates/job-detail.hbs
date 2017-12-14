@@ -1,0 +1,9 @@
+<br>
+Employees you can chat with about this job: <br><br>
+{{#each model.employees as |employee|}}
+  <button {{action 'startConversation' employee}} class="start-conversation">
+    <span style="border:dolid grey 1px; background: grey; border-radius:1px;color:white;padding:9px">{{employee.name}}</span>
+  </button>
+{{/each}}
+
+{{outlet}}

@@ -1,0 +1,64 @@
+<header>
+  {{#if (eq appController.currentRouteName "chat.chat")}}
+      {{top-header
+        title="Chat"
+        rightText="Filter"
+      }}
+      {{search-bar
+        placeholder=chatController.searchBarText
+        onInput=(action chatController.actions.onSearchBarInput)
+        value=chatController.searchValue
+        image=(icon-asset "searchChat.png")
+      }}
+  {{else if (eq appController.currentRouteName "chat.jobs")}}
+      {{top-header
+         title="Jobs"
+       }}
+      {{search-bar
+        placeholder=jobsController.searchBarText
+        onInput=(action jobsController.actions.onSearchBarInput)
+        value=jobsController.searchValue
+        image=(icon-asset "searchChat.png")
+      }}
+  {{else if (eq appController.currentRouteName "chat.companies")}}
+      {{top-header
+        title="Companies"
+      }}
+      {{search-bar
+        placeholder=companyController.searchBarText
+        onInput=(action companyController.actions.onSearchBarInput)
+        value=companyController.searchValue
+        image=(icon-asset "searchChat.png")
+      }}
+  {{else if (eq appController.currentRouteName "chat.requests")}}
+      {{top-header
+        title="Requests"
+      }}
+      {{search-bar
+        placeholder=requestController.searchBarText
+        onInput=(action requestController.actions.onSearchBarInput)
+        value=requestController.searchValue
+        image=(icon-asset "searchChat.png")
+      }}
+  {{/if}}
+  <nav>
+    {{#link-to "chat.jobs" class='nav-button'}}
+        <span>Jobs</span>
+    {{/link-to}}
+
+    {{#link-to "chat.chat" class='nav-button'}}
+        <span>Chat</span>
+    {{/link-to}}
+
+    {{#link-to "chat.companies" class='nav-button'}}
+        <span>Companies</span>
+    {{/link-to}}
+
+    {{#link-to "chat.requests" class='nav-button'}}
+        <span>Requests</span>
+    {{/link-to}}
+  </nav>
+</header>
+<div class="chat-viewport">
+  {{outlet}}
+</div>

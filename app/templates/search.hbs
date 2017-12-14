@@ -1,0 +1,27 @@
+
+<div id="bg">
+  <img src="{{image-asset "welcomeBG3.jpg"}}"/>
+</div>
+<div class="wrapper">
+<img class="search-page-logo" src="{{image-asset "waldo_logoColor.png"}}"/>
+
+<h3 class="search-page-slogan"> Let's find that job you've been looking for. </h3>
+
+<div class="div-search-bar">
+{{#link-to "detailed-search"}}
+  {{search-bar
+    placeholder="Search For Jobs"
+    image=(icon-asset "waldoSearch.png")
+  }}
+{{/link-to}}
+</div>
+<div id="recommended-jobs-header">
+   <h3 id="recommended-jobs-title"> Our Top Picks for You. </h3>
+    <div id="div-white-bar"{{action "showRecommendedJobSlider"}}><img id="recommended-jobs-open-close" src={{icon-asset "ctaUp.png"}}></div>
+    <div id="recommended-jobs-body" class="show">
+      {{#each model as |job|}}
+        {{job-entry job=job}}
+      {{/each}}
+    </div>
+</div>
+</div>

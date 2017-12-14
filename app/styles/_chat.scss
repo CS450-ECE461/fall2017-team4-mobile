@@ -1,0 +1,55 @@
+.mdl-route__chat {
+
+  header {
+    font-family: $waldo-font;
+    height: $chat-header-height;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $waldo-yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    nav {
+      text-decoration: none;
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 12.5px;
+      margin-top: 10px;
+
+      .nav-button {
+        text-align: center;
+        height: 20px;
+        color: white;
+        text-decoration: none;
+        padding: 0px 5px;
+      }
+
+      .nav-button.active {
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        border-bottom-width: 1.4px;
+      }
+    }
+  }
+
+  .chat-viewport {
+    height: calc(100% - #{$chat-header-height} - #{$nav-bar-height});
+    top: $chat-header-height;
+    position: absolute;
+    width: 100%;
+    overflow-y: scroll;
+
+    .edit-image {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      height: 50px;
+    }
+  }
+}

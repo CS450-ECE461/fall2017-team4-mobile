@@ -1,0 +1,18 @@
+<img src="https://s3-us-west-1.amazonaws.com/waldojobs-dev/app-assets/images/source/waldo_logoWhite.png" alt="waldo logo"/>
+
+{{#if errorMessage}}
+  <div class="error-message">{{errorMessage}}</div>
+{{/if}}
+
+<div class="signinInput">
+  <div>{{input value=username placeholder=emailPlaceholder required=true type=emailType errorMessage=emailErrorMessage}}</div>
+  <div>{{input value=password placeholder=passwordPlaceholder required=true type=(if showPassword "text" "password") errorMessage=passwordErrorMessage}}</div>
+</div>
+
+{{#if recaptcha}}
+  {{g-recaptcha-invisible verified=(action (mut recaptcha.value)) expired=(action (mut recaptcha.expired) true) reset=recaptcha.reset}}
+{{/if}}
+
+<a href="">Forgot Password? Click Here.</a>
+
+<button type="submit" {{action 'signIn'}}>{{if isSigningIn signingInText signInText}}</button>

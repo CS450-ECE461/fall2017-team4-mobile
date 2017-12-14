@@ -1,0 +1,18 @@
+
+{{#liquid-tether
+  target=target
+  attachment=connectorAttachment
+  targetAttachment=connectorTargetAttachment
+}}
+    <div class="connector" id={{concat elementId "connector"}}></div>
+{{/liquid-tether}}
+
+{{#liquid-tether
+  target=(concat "#" elementId "connector")
+  attachment=boxAttachment
+  targetAttachment=boxTargetAttachment
+  }}
+  <div class="box">
+    {{yield}}
+  </div>
+{{/liquid-tether}}

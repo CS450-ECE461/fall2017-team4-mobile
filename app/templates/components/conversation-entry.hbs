@@ -1,0 +1,27 @@
+<img src={{conversation.employee.image}}/ class="employee-image">
+<div class="employee-text">
+  <div class="employee-title">
+    <span>{{conversation.employee.name}}</span>
+    <span>{{companyName}}</span>
+  </div>
+  <span>{{message}}</span>
+</div>
+<div class="conversation-options">
+  <img src={{icon-asset "controlForward.png"}} {{action 'clickArrow'}} class="arrow"/>
+  <img src={{icon-asset "controlOptions.png"}} {{action 'clickDots'}} class="dots"/>
+</div>
+{{#if dotsClicked}}
+  {{#tethered-box
+    target=(concat "#" elementId " .dots")
+    boxAttachment="top right"
+    boxTargetAttachment="middle left"
+    connectorAttachment="center center"
+    connectorTargetAttachment="bottom center"
+  }}
+    <div class="contact-icons">
+      <img src={{icon-asset "waldoFacetime.png"}} class="facetime"/>
+      <img src={{icon-asset "waldoCall.png"}} class="call"/>
+    </div>
+  {{/tethered-box}}
+{{/if}}
+{{yield}}

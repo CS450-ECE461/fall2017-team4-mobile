@@ -1,0 +1,120 @@
+<div class="div-outer-white">
+
+ <div class="div-upper-blue">
+ </div>
+
+  <header>
+    <div class="div-toolbar">
+      <img class="edit-button image-hover-highlight" src={{icon-asset "editProfile.png"}}>
+      <span class="profile-title">Profile</span>
+      <a {{action 'signOut'}}><img class="settings-button image-hover-highlight"src={{icon-asset "profileSettings.png"}}></a>
+    </div>
+        {{search-bar
+          placeholder="Search"
+          image=(icon-asset "searchProfile.png")
+        }}
+    <br/>
+  </header>
+
+  <div class="div-inner-grey">
+
+    <div class="div-content">
+
+      <div class="profile-top">
+        <img src={{image-asset "waldo_user1.jpg"}}/>
+        <strong><h1> Sherry Jones </h1></strong>
+        <h2>Freelance Graphics Designer</h2>
+        </div>
+
+        <div class="profile-buttons">
+        <button class="portfolio-button" {{action 'viewPortfolio'}}> View Portfolio</button>
+        <button class="resume-button" {{action 'viewResume'}}>View Resume</button>
+      </div>
+
+      <div class="div-experience-list">
+        <h2> Experience </h2>
+
+          {{profile-list
+            imageSrc=(image-asset "highalpha-company.png")
+            jobName='Graphical Design Intern'
+            dateRange='Feb 2014 - Jan 2016'
+            companyName='High Alpha'
+            location='Indianapolis, IN'}}
+
+          <hr>
+
+          {{profile-list
+            imageSrc=(image-asset "spinweb.jpg")
+            jobName='Graphical Designer'
+            dateRange='Feb 2016 - May 2016'
+            companyName='Spinweb'
+            location='Seattle, IN'}}
+
+          <hr>
+
+          {{profile-list
+            imageSrc=(image-asset "coralroot.jpg")
+            jobName='Graphical Design Intern'
+            dateRange='Aug 2016 - Present'
+            companyName='Coral Root'
+            location='Indianapolis, IN'}}
+
+          <hr>
+      </div>
+
+      <div class="div-education-list">
+        <h2> Education </h2>
+
+        {{profile-list
+          imageSrc=(image-asset "university4.png")
+          jobName='Visual Communications'
+          dateRange='2011 - 2015'
+          companyName='IUPUI'
+          location='Indianapolis, IN' }}
+
+
+        <hr>
+
+      </div>
+
+    <div class="div-skills-list">
+      <h2> Skills </h2>
+
+      <div class="div-slick-slider">
+        {{#slick-slider autoplay=false arrows=true}}
+          <div class="box">
+            <button class="skill-item">Web Design</button>
+            <button class="skill-item">Print Design</button>
+            <button class="skill-item">Typography</button>
+            <button class="skill-item">Mobile Developer</button>
+          </div>
+          <div class="box">
+            <button class="skill-item">Communication</button>
+            <button class="skill-item">Management</button>
+            <button class="skill-item">Author</button>
+            <button class="skill-item">Neuroscientist</button>
+          </div>
+        {{/slick-slider}}
+        <br/>
+        <br/>
+    </div>
+
+
+   </div>
+
+   <div class="div-contact">
+     <h2> Contact </h2>
+     <div>
+       <img class="contact-chat image-hover-highlight" src={{icon-asset "waldoChat.png"}}>
+       <img class="contact-call image-hover-highlight" src={{icon-asset "waldoCall.png"}}>
+       <img class="contact-facetime image-hover-highlight" src={{icon-asset "waldoFacetime.png"}}>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+   </div>
+
+
+    </div>
+  </div>
+</div>

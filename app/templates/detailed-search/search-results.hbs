@@ -1,0 +1,11 @@
+<div class="search-list-add-button">
+  <div id="save-search-area">
+    <img src="{{icon-asset "searchSave.png"}}"/>
+    <button class="add-search-button">Save Search</button>
+  </div>
+</div>
+<div class="search-result-list">
+  {{#each model as |job|}}
+    {{job-entry job=job}}
+  {{/each}}
+</div>

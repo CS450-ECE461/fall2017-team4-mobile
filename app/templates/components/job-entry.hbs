@@ -1,0 +1,18 @@
+<div class="job-left">
+  <img src="{{job.company.logo}}" class="company-logo" {{action 'viewCompanyDetails'}}/>
+  <div class="job-details">
+    <div class="job-text">
+      <span class="title">{{job.title}}</span>
+      <span class="small">{{job.company.name}}</span>
+      <span class="small">{{job.location}}</span>
+    </div>
+    <span class="view-job" {{action 'viewJobDetails'}}>View Job Description</span>
+  </div>
+</div>
+<div class="job-right">
+  <img src="{{icon-asset (if itemSaved 'itemSaved.png' 'itemUnsaved.png')}}" {{action 'toggleSaved'}} class="heart-icon">
+  <span class="small">10h</span>
+</div>
+
+
+{{yield}}
