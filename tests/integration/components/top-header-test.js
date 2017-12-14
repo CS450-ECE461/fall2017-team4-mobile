@@ -1,4 +1,5 @@
 import { moduleForComponent, test } from 'ember-qunit';
+import { click } from 'ember-native-dom-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 moduleForComponent('top-header', 'Integration | Component | top header', {
@@ -6,19 +7,33 @@ moduleForComponent('top-header', 'Integration | Component | top header', {
 });
 
 test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
-  this.render(hbs`{{top-header}}`);
+  this.render(hbs`{{search-bar}}`);
 
   assert.equal(this.$().text().trim(), '');
+});
 
-  // Template block usage:
-  this.render(hbs`
-    {{#top-header}}
-      template block text
-    {{/top-header}}
-  `);
+test('Clicking the left and right buttons triggers the callbacks', function(assert) {
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  this.on('clickLeftButton', () => {
+    assert.step("Left button callback called!");
+  });
+
+  this.on('clickRightButton', () => {
+    assert.step("Right button callback called!");
+  });
+
+  this.render(hbs`{{top-header
+    title="Job Search"
+    clickLeft=(action 'clickLeftButton')
+    leftText="Left"
+    clickRight=(action 'clickRightButton')
+    rightText="Right"
+  }}`);
+
+  Ember.run(() => {
+    click(".filter");
+    click(".back");
+  })
+
+  assert.verifySteps(['Right button callback called!', 'Left button callback called!'])
 });
