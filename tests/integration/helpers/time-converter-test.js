@@ -8,7 +8,7 @@ moduleForComponent('time-converter', 'helper:time-converter', {
 
 // Replace this with your real tests.
 test('it converts dates properly', function(assert) {
-  this.set('inputDate', "Mon Dec 11 2017 14:53:33 GMT-0500 (EST)");
+  this.set('inputDate', "Mon Dec 11 2017 19:53:33 GMT");
 
   this.render(hbs`{{time-converter inputDate}}`);
 
