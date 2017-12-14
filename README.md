@@ -48,6 +48,10 @@ Once you are on the chat page you can begin a conversation. Users can send messa
 ## Future work
 [Here](https://github.com/CS450-ECE461/fall2017-team4-mobile/milestone/2) are all of our tickets to complete in the future
 
+## Login credentials (Or you can make your own user on the sign-up page)
+Username: sherryj@gmail.com
+Password: test
+
 ## GUI Transition Diagrams
 Home page:
 ![](docs/HomePage.jpg)
