@@ -1,63 +1,3 @@
-# web-ui
-Ember JS Project for frontend of App
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd web-ui`
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
-# Building the cordova app on Travis
-
-This process was extremely painful, so I thought it would be good to document here for future use.
-First, get cordova: `sudo npm install -g cordova`
-
-1) Use the .travis.yml file in this directory
-2) `ember install ember-cli-cordova`
-3) `ember generate cordova-init <name-of-project>`
-4) `rm -rf cordova/platforms` (this will remove the automatic ios platorm from the cordova directory)
-5) add `cordova/platforms/*` to your .gitignore
-6) add `cordova/node_modules/*` to your .gitignore
-7) add `cordova/plugins/*` to your .gitignore
-8) `rm -rf cordova/res` (if you don't want 10 MB of pictures in your project that don't seem to serve a purpose)
 
 # App Overview
 
@@ -103,4 +43,20 @@ The jobs page is functional but currently shows all existing jobs, this needs to
 
 When viewing jobs details you have the option of chatting with the person who posted the job, this will redirect you to the chat page.
 
-Once you are on the chat page you can begin a conversation. Messages can be sent but cannot be received. This process is only partially implemented due to time constraints. The completed chat feature would require development of a separate employee portal.
+Once you are on the chat page you can begin a conversation. Users can send messages, but there is not currently an employee portal in which an employee can send a message to a user. This process is only partially implemented due to time constraints.
+
+## Future work
+[Here](https://github.com/CS450-ECE461/fall2017-team4-mobile/milestone/2) are all of our tickets to complete in the future
+
+## GUI Transition Diagrams
+Home page:
+![](docs/HomePage.jpg)
+
+Job Profile:
+![](docs/JobProfile.jpg)
+
+User Profile:
+![](docs/UserProfile.jpg)
+
+Sign in options:
+![](docs/SignInOptions.jpg)
